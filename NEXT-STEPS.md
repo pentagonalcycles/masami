@@ -36,10 +36,9 @@ Tasks that still need to be completed before and after launch.
   - `hello@luminousrebirth.com` -- update in `ContactForm.tsx`, `Footer.tsx`, privacy/terms/refund pages
   - `babyclinicsomerset@gmail.com` -- already correct from original site
 
-### 5. Set Up GitHub Repository
-- Create a new private repo on GitHub
-- Push this codebase to the repo
-- See DEPLOYMENT.md for instructions
+### 5. Verify Domain and DNS
+- Domain `luminousrebirth.com` must point to Vercel
+- See [DEPLOYMENT.md](./DEPLOYMENT.md) for DNS configuration
 
 ## Important (Do Soon After Launch)
 
