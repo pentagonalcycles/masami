@@ -8,6 +8,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { services, testimonials, retreats } from "@/data/site-data";
 import { MapPin, Clock, Award, Heart } from "lucide-react";
 import { SacredJourneysBanner } from "@/components/SacredJourneysBanner";
+import { ImageLightbox } from "@/components/ImageLightbox";
 
 export default function Home() {
   const featuredTestimonials = testimonials.slice(0, 3);
@@ -232,15 +233,19 @@ export default function Home() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <FadeIn direction="left">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+              <ImageLightbox
+                src="https://static.wixstatic.com/media/97e6aa_c21d0285d26247ccafb7474abddf9489~mv2.jpeg"
+                alt="Sacred journeys and pilgrimages"
+                className="relative aspect-[4/5] rounded-2xl overflow-hidden block w-full"
+              >
                 <Image
                   src="https://static.wixstatic.com/media/97e6aa_c21d0285d26247ccafb7474abddf9489~mv2.jpeg"
                   alt="Sacred journeys and pilgrimages"
                   fill
-                  className="object-cover"
+                  className="object-cover hover:opacity-90 transition-opacity"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-              </div>
+              </ImageLightbox>
             </FadeIn>
             <FadeIn direction="right" delay={0.1}>
               <div>
