@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -9,9 +10,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <Link href="/">
-              <span className="font-heading text-2xl font-medium text-gold tracking-wide">
-                Luminous Rebirth
-              </span>
+              <Image
+                src="https://static.wixstatic.com/media/c1e158_c2d751644bb341b1ae942ea257fa7dc9~mv2.png"
+                alt="Luminous Rebirth"
+                width={200}
+                height={60}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/60">
               Craniosacral Therapy and Energy Healing in Glastonbury, London and
@@ -71,6 +76,14 @@ export function Footer() {
               <li>
                 <Link href="/about" className="hover:text-gold transition-colors">
                   About Masami
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/retreats"
+                  className="hover:text-gold transition-colors"
+                >
+                  Retreats
                 </Link>
               </li>
               <li>

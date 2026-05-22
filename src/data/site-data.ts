@@ -215,6 +215,32 @@ export const testimonials = [
   },
 ];
 
+export const retreats = {
+  heroImage:
+    "https://static.wixstatic.com/media/c1e158_c107ad10e662482abef96463c1921eac~mv2.jpg",
+  title: "Sacred Journeys & Retreats",
+  subtitle: "Experience transformative pilgrimages to sacred sites",
+  description:
+    "Join Masami on a transformative journey to connect with ancient wisdom traditions and elevate your spiritual consciousness. Our sacred pilgrimages offer a unique opportunity to step away from everyday life and immerse yourself in the beauty and tranquility of sacred spaces.",
+  longDescription:
+    "Imagine yourself surrounded by breathtaking landscapes, engaged in deep meditation, and sharing profound experiences with a like-minded community. Our retreats are designed to provide a nurturing environment where you can gain new perspectives, deepen your spiritual connection, and return home feeling refreshed, rejuvenated, and inspired.",
+  highlights: [
+    "Guided meditation and energy healing in sacred locations",
+    "Small, intimate groups for a deeply personal experience",
+    "Integration of craniosacral therapy and energy healing practices",
+    "Connection with ancient wisdom traditions and sacred sites",
+    "Nurturing environment for personal and spiritual growth",
+  ],
+  galleryImages: [
+    {
+      src: "https://static.wixstatic.com/media/c1e158_c107ad10e662482abef96463c1921eac~mv2.jpg",
+      alt: "Masami at a sacred site",
+    },
+  ],
+  inquiryNote:
+    "Upcoming retreat dates and locations are being finalised. Register your interest below and we will notify you as soon as details are confirmed.",
+};
+
 export const qualifications = [
   {
     name: "College of Craniosacral Therapy",

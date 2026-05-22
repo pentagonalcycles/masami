@@ -50,6 +50,7 @@ src/
     journal/page.tsx    # Blog index
     journal/[slug]/page.tsx # Individual blog posts
     gift-card/page.tsx  # eGift card
+    retreats/page.tsx   # Sacred Journeys & Retreats
     services/
       page.tsx                          # Services index
       craniosacral-glastonbury/page.tsx  # Individual service
@@ -70,8 +71,9 @@ src/
     NewsletterSignup.tsx    # Email capture form
     ContactForm.tsx         # Contact form component
     CalEmbed.tsx            # Cal.com booking integration
+    RetreatInquiryForm.tsx  # Retreat interest/inquiry form
   data/
-    site-data.ts            # All content data (services, testimonials, qualifications)
+    site-data.ts            # All content data (services, testimonials, qualifications, retreats)
 ```
 
 ## Design System
@@ -95,7 +97,7 @@ Defined in `src/app/globals.css` using Tailwind v4 `@theme`:
 
 ## Content Management
 
-All content is stored in `src/data/site-data.ts`. To update services, testimonials, or qualifications, edit this file directly.
+All content is stored in `src/data/site-data.ts`. To update services, testimonials, qualifications, or retreats, edit this file directly.
 
 Blog posts are defined in `src/app/journal/[slug]/page.tsx` in the `posts` object. For a more scalable solution, migrate to MDX or a headless CMS.
 

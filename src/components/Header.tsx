@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -19,6 +20,7 @@ const navLinks = [
     ],
   },
   { href: "/about", label: "About" },
+  { href: "/retreats", label: "Retreats" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/journal", label: "Journal" },
   { href: "/contact", label: "Contact" },
@@ -46,9 +48,14 @@ export function Header() {
       <div className="container-wide">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="relative z-10">
-            <span className="font-heading text-2xl md:text-3xl font-medium text-charcoal tracking-wide">
-              Luminous Rebirth
-            </span>
+            <Image
+              src="https://static.wixstatic.com/media/c1e158_c79c66f85e094337975002a716288ac7~mv2.png"
+              alt="Luminous Rebirth"
+              width={180}
+              height={50}
+              className="h-10 md:h-12 w-auto"
+              priority
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">

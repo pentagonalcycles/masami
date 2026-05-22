@@ -5,8 +5,8 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ContactForm } from "@/components/ContactForm";
-import { services, testimonials } from "@/data/site-data";
-import { MapPin, Clock, Award, Heart } from "lucide-react";
+import { services, testimonials, retreats } from "@/data/site-data";
+import { MapPin, Clock, Award, Heart, Compass } from "lucide-react";
 
 export default function Home() {
   const featuredTestimonials = testimonials.slice(0, 3);
@@ -223,6 +223,49 @@ export default function Home() {
               </Link>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Sacred Journeys */}
+      <section className="relative min-h-[60vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image
+            src={retreats.heroImage}
+            alt="Sacred Journeys & Retreats"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/50 to-transparent" />
+        </div>
+        <div className="container-wide relative z-10">
+          <div className="max-w-xl">
+            <FadeIn>
+              <div className="flex items-center gap-3 mb-4">
+                <Compass size={20} className="text-gold" />
+                <p className="text-gold tracking-[0.3em] uppercase text-sm">
+                  Sacred Journeys
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <h2 className="heading-lg text-white mb-4">
+                Experience Transformative Retreats
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-white/80 text-body mb-8">
+                Join Masami on pilgrimages to sacred sites, where ancient wisdom
+                meets deep healing. Immerse yourself in breathtaking landscapes,
+                guided meditation, and transformative energy work.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <Link href="/retreats" className="btn-primary">
+                Explore Retreats
+              </Link>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

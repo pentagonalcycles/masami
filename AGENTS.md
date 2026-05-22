@@ -23,6 +23,7 @@ Instructions for AI coding agents working on this project.
 - Server components by default. Add `"use client"` only when needed (interactivity, hooks, event handlers)
 - All content data lives in `src/data/site-data.ts` -- update there, not inline
 - Service pages use the shared `ServicePageTemplate` component
+- Retreat page (`/retreats`) uses `RetreatInquiryForm` for interest registration
 - Use `FadeIn` wrapper for scroll-triggered animations
 - Tailwind classes only -- no inline styles, no CSS modules
 - Responsive-first: design mobile, then `md:`, `lg:` breakpoints
