@@ -4,16 +4,11 @@ Tasks that still need to be completed before and after launch.
 
 ## Critical (Must Do Before Launch)
 
-### 1. Set Up Cal.com Account
-- Create an account at [cal.com](https://cal.com)
-- Set up event types matching each service:
-  - Craniosacral Session | Glastonbury (60 min, GBP 70)
-  - Craniosacral Session | London (60 min, GBP 100)
-  - Craniosacral Mother & Baby | Glastonbury (60 min, GBP 70)
-  - Energy Healing Remote (60 min, GBP 70)
-  - Emergency Assistance Remote (30 min, GBP 40)
-- Update booking links in `src/components/CalEmbed.tsx` or individual service pages
-- Replace placeholder `calLink` values with actual Cal.com usernames/slug
+### 1. Bookings (Done)
+- Booking buttons link to Wix Bookings calendar pages on luminousrebirth.com
+- Each service has a `wixBookingUrl` field in `src/data/site-data.ts`
+- Booking opens in a new tab, keeping the existing Wix payment/checkout flow intact
+- The Wix site must remain active for bookings to work
 
 ### 2. Wire Contact Form to Email Service
 - Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar

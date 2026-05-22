@@ -26,6 +26,8 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_ca9f5a826f3a4823a9b45efd74c27dd0~mv2.jpg",
     bookingType: "book",
+    wixBookingUrl:
+      "https://www.luminousrebirth.com/booking-calendar/craniosacral-session-glastonbury-1",
   },
   {
     slug: "craniosacral-london",
@@ -54,6 +56,8 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_f6601ebca67d4f4687bd6809a1f4382f~mv2.jpg",
     bookingType: "book",
+    wixBookingUrl:
+      "https://www.luminousrebirth.com/booking-calendar/craniosacral-session-london-1",
   },
   {
     slug: "mother-baby",
@@ -82,6 +86,8 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_a04f25ea6eea4ae18952eb9feffed8ed~mv2.jpg",
     bookingType: "book",
+    wixBookingUrl:
+      "https://www.luminousrebirth.com/booking-calendar/craniosacral-mother-baby-glastonbury-1",
   },
   {
     slug: "energy-healing",
@@ -110,6 +116,8 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_f11740e7bb6644c59727226b3cc3174f~mv2.jpg",
     bookingType: "book",
+    wixBookingUrl:
+      "https://www.luminousrebirth.com/booking-calendar/energy-healing-zoom",
   },
   {
     slug: "emergency",
@@ -137,6 +145,8 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/97e6aa_993631817cfa4fc5b844330875f6a69c~mv2.jpg",
     bookingType: "request",
+    wixBookingUrl:
+      "https://www.luminousrebirth.com/booking-calendar/emergency-assistance-remote-1",
   },
 ];
 
