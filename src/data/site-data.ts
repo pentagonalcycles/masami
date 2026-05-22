@@ -236,6 +236,10 @@ export const retreats = {
       src: "https://static.wixstatic.com/media/c1e158_c107ad10e662482abef96463c1921eac~mv2.jpg",
       alt: "Masami at a sacred site",
     },
+    {
+      src: "https://static.wixstatic.com/media/97e6aa_c21d0285d26247ccafb7474abddf9489~mv2.jpeg",
+      alt: "Pilgrimage at a sacred site",
+    },
   ],
   inquiryNote:
     "Upcoming retreat dates and locations are being finalised. Register your interest below and we will notify you as soon as details are confirmed.",

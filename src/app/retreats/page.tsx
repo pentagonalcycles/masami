@@ -76,8 +76,8 @@ export default function RetreatsPage() {
             <FadeIn direction="right" delay={0.1}>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
                 <Image
-                  src={retreats.heroImage}
-                  alt="Sacred journey experience"
+                  src={retreats.galleryImages[1].src}
+                  alt={retreats.galleryImages[1].alt}
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
