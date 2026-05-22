@@ -4,11 +4,20 @@ Tasks that still need to be completed before and after launch.
 
 ## Critical (Must Do Before Launch)
 
-### 1. Bookings (Done)
-- Booking buttons link to Wix Bookings calendar pages on luminousrebirth.com
-- Each service has a `wixBookingUrl` field in `src/data/site-data.ts`
-- Booking opens in a new tab, keeping the existing Wix payment/checkout flow intact
-- The Wix site must remain active for bookings to work
+### 1. Set Up Cal.com Account (Required for Bookings)
+- Create a free account at [cal.com](https://cal.com)
+- Choose a username (e.g., `masami-noro`) -- this is used in all booking links
+- Connect a Google, Outlook, or iCloud calendar for availability sync
+- Connect Stripe (for card payments) and/or PayPal in Settings > Billing > Payment
+- Create 5 event types matching the services:
+  - `craniosacral-glastonbury` -- 60 min, GBP 70
+  - `craniosacral-london` -- 60 min, GBP 100
+  - `mother-and-baby` -- 60 min, GBP 70
+  - `energy-healing` -- 60 min, GBP 70
+  - `emergency-assistance` -- 30 min, GBP 40
+- Set availability for each event type (in-person vs remote, London vs Glastonbury)
+- The `calLink` values in `src/data/site-data.ts` already match these slugs (e.g., `masami-noro/craniosacral-glastonbury`)
+- Update the username in `site-data.ts` if Cal.com username differs from `masami-noro`
 
 ### 2. Wire Contact Form to Email Service
 - Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar
