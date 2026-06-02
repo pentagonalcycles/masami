@@ -47,7 +47,7 @@ export function BookingButton({
 }) {
   return (
     <a
-      href={`https://cal.com/${calLink}`}
+      href={`https://cal.eu/${calLink}`}
       target="_blank"
       rel="noopener noreferrer"
       className={className ?? "btn-primary"}

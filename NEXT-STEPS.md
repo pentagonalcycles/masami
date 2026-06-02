@@ -5,10 +5,9 @@ Tasks that still need to be completed before and after launch.
 ## Critical (Must Do Before Launch)
 
 ### 1. Set Up Cal.com Account (Required for Bookings)
-- Create a free account at [cal.com](https://cal.com)
-- Choose a username (e.g., `masami-noro`) -- this is used in all booking links
-- Connect a Google, Outlook, or iCloud calendar for availability sync
-- Connect Stripe (for card payments) and/or PayPal in Settings > Billing > Payment
+- Account created at [cal.eu](https://app.cal.eu) (username: `luminousrebirth`)
+- Connect a Google, Outlook, or iCloud calendar for availability sync (Settings > Calendars)
+- Connect Stripe (for card payments) and/or PayPal in Settings > Apps
 - Create 5 event types matching the services:
   - `craniosacral-glastonbury` -- 60 min, GBP 70
   - `craniosacral-london` -- 60 min, GBP 100
@@ -16,8 +15,9 @@ Tasks that still need to be completed before and after launch.
   - `energy-healing` -- 60 min, GBP 70
   - `emergency-assistance` -- 30 min, GBP 40
 - Set availability for each event type (in-person vs remote, London vs Glastonbury)
-- The `calLink` values in `src/data/site-data.ts` already match these slugs (e.g., `masami-noro/craniosacral-glastonbury`)
-- Update the username in `site-data.ts` if Cal.com username differs from `masami-noro`
+- Set location for each event type (in-person for Glastonbury/London, remote for energy-healing/emergency)
+- Enable promo codes per event type if needed (codes managed in Stripe dashboard)
+- The `calLink` values in `src/data/site-data.ts` match these slugs (e.g., `luminousrebirth/craniosacral-glastonbury`)
 
 ### 2. Wire Contact Form to Email Service
 - Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar

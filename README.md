@@ -103,7 +103,7 @@ Blog posts are defined in `src/app/journal/[slug]/page.tsx` in the `posts` objec
 
 ## Booking
 
-Booking is powered by [Cal.com](https://cal.com) (free tier). Each service has a `calLink` field in `site-data.ts` pointing to a Cal.com event type (e.g., `masami-noro/craniosacral-glastonbury`). Booking buttons open the Cal.com calendar in a new tab where clients select a time slot and pay via Stripe or PayPal.
+Booking is powered by [Cal.com](https://cal.eu) (free tier). Each service has a `calLink` field in `site-data.ts` pointing to a Cal.com event type (e.g., `luminousrebirth/craniosacral-glastonbury`). Booking buttons open the Cal.com calendar in a new tab where clients select a time slot and pay via Stripe or PayPal.
 
 See [NEXT-STEPS.md](./NEXT-STEPS.md) for Cal.com account setup instructions.
 

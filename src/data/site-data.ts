@@ -26,7 +26,7 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_ca9f5a826f3a4823a9b45efd74c27dd0~mv2.jpg",
     bookingType: "book",
-    calLink: "masami-noro/craniosacral-glastonbury",
+    calLink: "luminousrebirth/craniosacral-glastonbury",
   },
   {
     slug: "craniosacral-london",
@@ -55,7 +55,7 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_f6601ebca67d4f4687bd6809a1f4382f~mv2.jpg",
     bookingType: "book",
-    calLink: "masami-noro/craniosacral-london",
+    calLink: "luminousrebirth/craniosacral-london",
   },
   {
     slug: "mother-baby",
@@ -84,7 +84,7 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_a04f25ea6eea4ae18952eb9feffed8ed~mv2.jpg",
     bookingType: "book",
-    calLink: "masami-noro/mother-and-baby",
+    calLink: "luminousrebirth/mother-and-baby",
   },
   {
     slug: "energy-healing",
@@ -113,7 +113,7 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/c1e158_f11740e7bb6644c59727226b3cc3174f~mv2.jpg",
     bookingType: "book",
-    calLink: "masami-noro/energy-healing",
+    calLink: "luminousrebirth/energy-healing",
   },
   {
     slug: "emergency",
@@ -141,7 +141,7 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/97e6aa_993631817cfa4fc5b844330875f6a69c~mv2.jpg",
     bookingType: "request",
-    calLink: "masami-noro/emergency-assistance",
+    calLink: "luminousrebirth/emergency-assistance",
   },
 ];
 
