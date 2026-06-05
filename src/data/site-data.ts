@@ -258,8 +258,8 @@ export const featuredRetreats = [
     subtitle: "A Sacred Feminine Pilgrimage through Provence & Cathar Country",
     location: "Southern France",
     dates: "10–17 October 2026",
-    image:
-      "https://static.wixstatic.com/media/c1e158_c107ad10e662482abef96463c1921eac~mv2.jpg",
+    image: "/images/retreats/masami-walking.jpg",
+    flyerImage: "/images/retreats/mary-magdalene-flyer.jpg",
     shortDescription:
       "Join an intimate circle of women for an eight-day pilgrimage through the mystical landscapes of Provence and Cathar Country. Walk sacred sites shaped by the enduring teachings of Mary Magdalene.",
     fullDescription:

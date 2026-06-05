@@ -195,6 +195,19 @@ export default function RetreatsPage() {
                     {retreat.fullDescription}
                   </p>
 
+                  {/* Flyer */}
+                  {retreat.flyerImage && (
+                    <div className="relative aspect-square rounded-2xl overflow-hidden mb-8">
+                      <Image
+                        src={retreat.flyerImage}
+                        alt={`${retreat.title} flyer`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
+                  )}
+
                   {/* Trip Details */}
                   <div className="bg-cream rounded-xl p-6 mb-8">
                     <h3 className="font-heading text-xl text-charcoal mb-4">
