@@ -16,6 +16,7 @@ interface RetreatFeatureCardProps {
 export function RetreatFeatureCard({
   badge,
   title,
+  subtitle,
   location,
   dates,
   image,
@@ -49,7 +50,8 @@ export function RetreatFeatureCard({
             <span>{location}</span>
           </div>
         </div>
-        <h3 className="heading-sm text-charcoal mb-2">{title}</h3>
+        <h3 className="heading-sm text-charcoal mb-1">{title}</h3>
+        <p className="text-text-light text-sm italic mb-3">{subtitle}</p>
         <p className="text-text-light text-sm leading-relaxed mb-6">
           {shortDescription}
         </p>
