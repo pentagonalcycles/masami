@@ -165,48 +165,36 @@ export default function RetreatsPage() {
           id={retreat.slug}
           className="section-padding"
         >
-          <div className="container-wide">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-              <FadeIn direction="left">
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+          <div className="container-narrow">
+            <FadeIn>
+              {retreat.flyerImage && (
+                <div className="relative aspect-square rounded-2xl overflow-hidden mb-10">
                   <Image
-                    src={retreat.image}
+                    src={retreat.flyerImage}
                     alt={retreat.title}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1152px) 100vw, 1152px"
                   />
                 </div>
-              </FadeIn>
-              <FadeIn direction="right" delay={0.1}>
-                <div>
-                  {retreat.badge && (
-                    <span className="inline-block bg-gold text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
-                      {retreat.badge}
-                    </span>
-                  )}
-                  <h2 className="heading-lg text-charcoal mb-2">
-                    {retreat.title}
-                  </h2>
-                  <p className="text-text-light text-body italic mb-6">
-                    {retreat.subtitle}
-                  </p>
-                  <p className="text-text text-body mb-6">
-                    {retreat.fullDescription}
-                  </p>
-
-                  {/* Flyer */}
-                  {retreat.flyerImage && (
-                    <div className="relative aspect-square rounded-2xl overflow-hidden mb-8">
-                      <Image
-                        src={retreat.flyerImage}
-                        alt={`${retreat.title} flyer`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                      />
-                    </div>
-                  )}
+              )}
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <div>
+                {retreat.badge && (
+                  <span className="inline-block bg-gold text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
+                    {retreat.badge}
+                  </span>
+                )}
+                <h2 className="heading-lg text-charcoal mb-2">
+                  {retreat.title}
+                </h2>
+                <p className="text-text-light text-body italic mb-6">
+                  {retreat.subtitle}
+                </p>
+                <p className="text-text text-body mb-10">
+                  {retreat.fullDescription}
+                </p>
 
                   {/* Trip Details */}
                   <div className="bg-cream rounded-xl p-6 mb-8">
@@ -305,7 +293,6 @@ export default function RetreatsPage() {
                   </div>
                 </div>
               </FadeIn>
-            </div>
           </div>
         </section>
       ))}
