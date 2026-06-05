@@ -5,10 +5,11 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ContactForm } from "@/components/ContactForm";
-import { services, testimonials, retreats } from "@/data/site-data";
+import { services, testimonials, retreats, featuredRetreats } from "@/data/site-data";
 import { MapPin, Clock, Award, Heart } from "lucide-react";
 import { SacredJourneysBanner } from "@/components/SacredJourneysBanner";
 import { ImageLightbox } from "@/components/ImageLightbox";
+import { RetreatFeatureCard } from "@/components/RetreatFeatureCard";
 
 export default function Home() {
   const featuredTestimonials = testimonials.slice(0, 3);
@@ -276,6 +277,45 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Featured Retreat */}
+      {featuredRetreats.length > 0 && (
+        <section className="section-padding bg-cream-dark">
+          <div className="container-wide">
+            <FadeIn>
+              <div className="text-center mb-16">
+                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                  Upcoming Retreat
+                </p>
+                <h2 className="heading-lg text-charcoal">
+                  Sacred Journeys
+                </h2>
+                <p className="text-text-light max-w-2xl mx-auto mt-4 text-body">
+                  Join Masami on transformative pilgrimages to sacred sites.
+                  Walk ancient lands, connect with spiritual lineages, and
+                  return home transformed.
+                </p>
+              </div>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredRetreats.map((retreat, i) => (
+                <FadeIn key={retreat.slug} delay={i * 0.1}>
+                  <RetreatFeatureCard
+                    badge={retreat.badge}
+                    title={retreat.title}
+                    subtitle={retreat.subtitle}
+                    location={retreat.location}
+                    dates={retreat.dates}
+                    image={retreat.image}
+                    shortDescription={retreat.shortDescription}
+                    slug={retreat.slug}
+                  />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Sacred Journeys */}
       <SacredJourneysBanner heroImage={retreats.heroImage} />
