@@ -250,6 +250,64 @@ export const retreats = {
     "Upcoming retreat dates and locations are being finalised. Register your interest below and we will notify you as soon as details are confirmed.",
 };
 
+export const featuredRetreats = [
+  {
+    slug: "walking-the-path-of-mary-magdalene",
+    badge: "NEW",
+    title: "Walking the Path of Mary Magdalene",
+    subtitle: "A Sacred Feminine Pilgrimage through Provence & Cathar Country",
+    location: "Southern France",
+    dates: "10–17 October 2026",
+    image:
+      "https://static.wixstatic.com/media/c1e158_c107ad10e662482abef96463c1921eac~mv2.jpg",
+    shortDescription:
+      "Join an intimate circle of women for an eight-day pilgrimage through the mystical landscapes of Provence and Cathar Country. Walk sacred sites shaped by the enduring teachings of Mary Magdalene.",
+    fullDescription:
+      "The call to walk the path of Mary Magdalene is a whisper, a remembrance of something ancient and divine within your heart. In the mystical landscapes of Languedoc and Provence, we enter a sanctuary where sacred lineage is ready to awaken your potential for profound spiritual growth. This journey weaves together legends, sacred lands, and spiritual energies — where Templar history, Cathar wisdom, and Magdalene teachings converge to create an experience of deep expansion rooted in love, joy, and wholeness.",
+    highlights: [
+      {
+        title: "Caves & Forests",
+        description:
+          "Hike through druidic woodlands, visit La Sainte-Baume — the 'womb of the Magdalene' — and La Grotte aux Oeufs.",
+      },
+      {
+        title: "Black Madonna",
+        description:
+          "Visit the coastal sanctuary of Saintes-Maries-de-la-Mer and discover the mysteries of Sarah, the Black Madonna.",
+      },
+      {
+        title: "Stronghold Castles",
+        description:
+          "Climb Montségur Castle, the final Cathar stronghold, and explore the cosmic portal encoded at Rennes-le-Château.",
+      },
+      {
+        title: "Vortexes",
+        description:
+          "Experience the powerful energy vortex at Bugarach, known as the 'upside-down mountain' and a gateway to higher consciousness.",
+      },
+      {
+        title: "Sound Healing",
+        description:
+          "Indulge in an exclusive channeled sound healing session in a sacred setting.",
+      },
+      {
+        title: "Sisterhood",
+        description:
+          "Connect deeply with an intimate circle of like-minded women in a nurturing, transformative environment.",
+      },
+    ],
+    tripDetails: {
+      dates: "10–17 October 2026",
+      groupSize: "Limited to 7 participants",
+      startEnd:
+        "Begins in Marseille (18:00 on 10th) | Ends with drop-off in Marseille",
+      activityLevel:
+        "Moderate. Some days will involve trekking to mountain summits",
+    },
+    contactEmail: "masami@luminousearth.com",
+  },
+];
+
 export const qualifications = [
   {
     name: "College of Craniosacral Therapy",
