@@ -42,13 +42,14 @@ Tasks that still need to be completed before and after launch.
 
 ## Important (Do Soon After Launch)
 
-### 6. Replace Images with High-Resolution Originals
+### 6. Replace Remaining Images with High-Resolution Originals
 - Log into the Wix dashboard for luminousrebirth.com
 - Go to Media > My Uploads
 - Download all original photos (not the compressed versions)
 - Place them in `public/images/`
 - Update image paths in `src/data/site-data.ts` and page files
 - Delete the Wix CDN references once local images are in place
+- **Done:** Retreat images (Mary Magdalene flyer + Masami walking photo) already added to `public/images/retreats/`
 
 ### 7. Wire Gift Card Purchase
 - Currently a static page with placeholder buttons

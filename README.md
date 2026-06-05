@@ -72,8 +72,9 @@ src/
     ContactForm.tsx         # Contact form component
     CalEmbed.tsx            # Cal.com booking integration
     RetreatInquiryForm.tsx  # Retreat interest/inquiry form
+    RetreatFeatureCard.tsx  # Featured retreat card (home page)
   data/
-    site-data.ts            # All content data (services, testimonials, qualifications, retreats)
+    site-data.ts            # All content data (services, testimonials, qualifications, retreats, featuredRetreats)
 ```
 
 ## Design System
@@ -97,7 +98,17 @@ Defined in `src/app/globals.css` using Tailwind v4 `@theme`:
 
 ## Content Management
 
-All content is stored in `src/data/site-data.ts`. To update services, testimonials, qualifications, or retreats, edit this file directly.
+All content is stored in `src/data/site-data.ts`. To update services, testimonials, qualifications, retreats, or featured retreats, edit this file directly.
+
+### Featured Retreats
+
+The `featuredRetreats` array in `site-data.ts` powers both the home page retreat card and the retreats page detail section. Each retreat entry includes:
+- `slug`, `badge`, `title`, `subtitle`, `location`, `dates`
+- `image` (main photo), `flyerImage` (promotional poster)
+- `shortDescription` (card), `fullDescription` (detail page)
+- `highlights[]`, `tripDetails{}`, `contactEmail`
+
+To add a new retreat, append a new object to the `featuredRetreats` array. The home page card and retreats page will render it automatically.
 
 Blog posts are defined in `src/app/journal/[slug]/page.tsx` in the `posts` object. For a more scalable solution, migrate to MDX or a headless CMS.
 
@@ -109,7 +120,7 @@ See [NEXT-STEPS.md](./NEXT-STEPS.md) for Cal.com account setup instructions.
 
 ## Images
 
-Images are served from the existing Wix CDN (`static.wixstatic.com`) via `next/image`. For better quality, download originals from the Wix media library and place them in `public/images/`.
+Images are served from the existing Wix CDN (`static.wixstatic.com`) via `next/image` and from `public/images/` for local assets. Retreat images have already been moved to `public/images/retreats/`. For remaining images, download originals from the Wix media library and place them in `public/images/`.
 
 ## Deployment
 
