@@ -4,20 +4,10 @@ Tasks that still need to be completed before and after launch.
 
 ## Critical (Must Do Before Launch)
 
-### 1. Set Up Cal.com Account (Required for Bookings)
-- Account created at [cal.eu](https://app.cal.eu) (username: `luminousrebirth`)
-- Connect a Google, Outlook, or iCloud calendar for availability sync (Settings > Calendars)
-- Connect Stripe (for card payments) and/or PayPal in Settings > Apps
-- Create 5 event types matching the services:
-  - `craniosacral-glastonbury` -- 60 min, GBP 70
-  - `craniosacral-london` -- 60 min, GBP 100
-  - `mother-and-baby` -- 60 min, GBP 70
-  - `energy-healing` -- 60 min, GBP 70
-  - `emergency-assistance` -- 30 min, GBP 40
-- Set availability for each event type (in-person vs remote, London vs Glastonbury)
-- Set location for each event type (in-person for Glastonbury/London, remote for energy-healing/emergency)
-- Enable promo codes per event type if needed (codes managed in Stripe dashboard)
-- The `calLink` values in `src/data/site-data.ts` match these slugs (e.g., `luminousrebirth/craniosacral-glastonbury`)
+### 1. Verify Wix Booking Links (Required for Bookings)
+- The `bookingUrl` values in `src/data/site-data.ts` point to the existing Wix Bookings calendar pages
+- Test each booking link to confirm it opens the correct Wix calendar
+- Ensure the Wix Bookings service remains active while the new site is live
 
 ### 2. Wire Contact Form to Email Service
 - Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar

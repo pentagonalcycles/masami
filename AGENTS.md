@@ -43,7 +43,7 @@ Instructions for AI coding agents working on this project.
 
 - Do NOT add dependencies without checking `package.json` first
 - Images from `static.wixstatic.com` are already allowed in `next.config.ts`
-- The booking system is Cal.com (links in `CalEmbed.tsx`)
+- The booking system is Wix Bookings (links in `WixBookingsEmbed.tsx`)
 - Contact/newsletter forms are currently simulated (no API routes yet)
 - Do not hardcode dates or prices inline -- use `site-data.ts`
 - Lint and build must pass: `npm run lint && npm run build`

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
-import { BookingButton } from "@/components/CalEmbed";
+import { WixBookingLink } from "@/components/WixBookingsEmbed";
 import { testimonials } from "@/data/site-data";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { Clock, MapPin, PoundSterling, Check } from "lucide-react";
@@ -19,7 +19,7 @@ interface ServicePageProps {
   benefits: string[];
   image: string;
   bookingType: "book" | "request";
-  calLink?: string;
+  bookingUrl?: string;
 }
 
 export function ServicePageTemplate({
@@ -34,7 +34,7 @@ export function ServicePageTemplate({
   benefits,
   image,
   bookingType,
-  calLink,
+  bookingUrl,
 }: ServicePageProps) {
   const relatedTestimonials = testimonials
     .filter((t) =>
@@ -140,17 +140,17 @@ export function ServicePageTemplate({
                       <span className="text-text">{price}</span>
                     </div>
                   </div>
-                  {calLink ? (
-                    <BookingButton calLink={calLink} className="btn-primary w-full text-center block">
+                  {bookingUrl ? (
+                    <WixBookingLink bookingUrl={bookingUrl} className="btn-primary w-full text-center block">
                       {bookingType === "book" ? "Book Now" : "Request Session"}
-                    </BookingButton>
+                    </WixBookingLink>
                   ) : (
                     <Link href="/contact" className="btn-primary w-full text-center block">
                       {bookingType === "book" ? "Book Now" : "Request Session"}
                     </Link>
                   )}
                   <p className="text-xs text-text-muted text-center mt-3">
-                    {calLink ? "Opens Cal.com booking calendar" : "Contact us to book"}
+                    {bookingUrl ? "Opens Wix booking calendar" : "Contact us to book"}
                   </p>
                 </div>
               </FadeIn>

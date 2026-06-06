@@ -103,7 +103,7 @@ Before cancelling the Wix subscription:
 - [ ] Verify the new site is live and working on Vercel
 - [ ] Download all original images from Wix media library
 - [ ] Export any client data from Wix Bookings
-- [ ] Set up Cal.com and verify booking flow works
+- [ ] Verify Wix booking links work correctly
 - [ ] Update any external links pointing to the old Wix site
 - [ ] Confirm all email addresses are updated
 - [ ] Run a final test of all pages, forms, and links

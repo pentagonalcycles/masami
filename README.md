@@ -70,7 +70,7 @@ src/
     TestimonialCard.tsx     # Testimonial card + filterable grid
     NewsletterSignup.tsx    # Email capture form
     ContactForm.tsx         # Contact form component
-    CalEmbed.tsx            # Cal.com booking integration
+    WixBookingsEmbed.tsx    # Wix Bookings integration
     RetreatInquiryForm.tsx  # Retreat interest/inquiry form
     RetreatFeatureCard.tsx  # Featured retreat card (home page)
   data/
@@ -114,9 +114,7 @@ Blog posts are defined in `src/app/journal/[slug]/page.tsx` in the `posts` objec
 
 ## Booking
 
-Booking is powered by [Cal.com](https://cal.eu) (free tier). Each service has a `calLink` field in `site-data.ts` pointing to a Cal.com event type (e.g., `luminousrebirth/craniosacral-glastonbury`). Booking buttons open the Cal.com calendar in a new tab where clients select a time slot and pay via Stripe or PayPal.
-
-See [NEXT-STEPS.md](./NEXT-STEPS.md) for Cal.com account setup instructions.
+Booking is powered by Wix Bookings on the original site. Each service has a `bookingUrl` field in `site-data.ts` pointing to the Wix Bookings calendar page. Booking buttons open the Wix calendar in a new tab where clients select a time slot and pay.
 
 ## Images
 
