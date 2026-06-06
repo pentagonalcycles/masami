@@ -1,8 +1,17 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { RetreatInquiryForm } from "@/components/RetreatInquiryForm";
-import { retreats, featuredRetreats } from "@/data/site-data";
-import { MapPin, Users, Sparkles, Heart, Compass, Calendar } from "lucide-react";
+import { PastRetreatCard } from "@/components/PastRetreatCard";
+import { retreats, featuredRetreats, customRetreats } from "@/data/site-data";
+import {
+  MapPin,
+  Users,
+  Sparkles,
+  Heart,
+  Compass,
+  Calendar,
+  CheckCircle,
+} from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +21,9 @@ export const metadata: Metadata = {
 };
 
 export default function RetreatsPage() {
+  const upcomingRetreats = featuredRetreats.filter((r) => r.status === "upcoming");
+  const pastRetreats = featuredRetreats.filter((r) => r.status === "past");
+
   return (
     <>
       {/* Hero Section */}
@@ -35,9 +47,7 @@ export default function RetreatsPage() {
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <h1 className="heading-xl text-white mb-6">
-                {retreats.title}
-              </h1>
+              <h1 className="heading-xl text-white mb-6">{retreats.title}</h1>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-white/80 text-body max-w-lg mb-8">
@@ -96,9 +106,7 @@ export default function RetreatsPage() {
               <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
                 What Awaits You
               </p>
-              <h2 className="heading-lg text-charcoal">
-                Retreat Highlights
-              </h2>
+              <h2 className="heading-lg text-charcoal">Retreat Highlights</h2>
             </div>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -158,144 +166,243 @@ export default function RetreatsPage() {
         </div>
       </section>
 
-      {/* Featured Retreats */}
-      {featuredRetreats.map((retreat) => (
-        <section
-          key={retreat.slug}
-          id={retreat.slug}
-          className="section-padding"
-        >
-          <div className="container-narrow">
+      {/* Upcoming Retreats */}
+      {upcomingRetreats.length > 0 && (
+        <section className="section-padding bg-white">
+          <div className="container-wide">
             <FadeIn>
-              {retreat.flyerImage && (
-                <div className="relative aspect-square rounded-2xl overflow-hidden mb-10">
-                  <Image
-                    src={retreat.flyerImage}
-                    alt={retreat.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1152px) 100vw, 1152px"
-                  />
-                </div>
-              )}
-            </FadeIn>
-            <FadeIn delay={0.1}>
-              <div>
-                {retreat.badge && (
-                  <span className="inline-block bg-gold text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
-                    {retreat.badge}
-                  </span>
-                )}
-                <h2 className="heading-lg text-charcoal mb-2">
-                  {retreat.title}
+              <div className="text-center mb-16">
+                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                  Join Us
+                </p>
+                <h2 className="heading-lg text-charcoal">
+                  Upcoming Retreats
                 </h2>
-                <p className="text-text-light text-body italic mb-6">
-                  {retreat.subtitle}
-                </p>
-                <p className="text-text text-body mb-10">
-                  {retreat.fullDescription}
-                </p>
+              </div>
+            </FadeIn>
+            {upcomingRetreats.map((retreat) => (
+              <div key={retreat.slug} id={retreat.slug} className="mb-20 last:mb-0">
+                <div className="container-narrow">
+                  <FadeIn>
+                    {retreat.flyerImage && (
+                      <div className="relative aspect-square rounded-2xl overflow-hidden mb-10">
+                        <Image
+                          src={retreat.flyerImage}
+                          alt={retreat.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1152px) 100vw, 1152px"
+                        />
+                      </div>
+                    )}
+                  </FadeIn>
+                  <FadeIn delay={0.1}>
+                    <div>
+                      {retreat.badge && (
+                        <span className="inline-block bg-gold text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
+                          {retreat.badge}
+                        </span>
+                      )}
+                      <h3 className="heading-lg text-charcoal mb-2">
+                        {retreat.title}
+                      </h3>
+                      <p className="text-text-light text-body italic mb-6">
+                        {retreat.subtitle}
+                      </p>
+                      <p className="text-text text-body mb-10">
+                        {retreat.fullDescription}
+                      </p>
 
-                  {/* Trip Details */}
-                  <div className="bg-cream rounded-xl p-6 mb-8">
-                    <h3 className="font-heading text-xl text-charcoal mb-4">
-                      Trip at a Glance
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                      <div className="flex items-start gap-2">
-                        <Calendar
-                          size={16}
-                          className="text-gold mt-0.5 shrink-0"
-                        />
-                        <div>
-                          <p className="text-text-light">Dates</p>
-                          <p className="text-charcoal font-medium">
-                            {retreat.tripDetails.dates}
-                          </p>
+                      {/* Trip Details */}
+                      <div className="bg-cream rounded-xl p-6 mb-8">
+                        <h4 className="font-heading text-xl text-charcoal mb-4">
+                          Trip at a Glance
+                        </h4>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                          <div className="flex items-start gap-2">
+                            <Calendar
+                              size={16}
+                              className="text-gold mt-0.5 shrink-0"
+                            />
+                            <div>
+                              <p className="text-text-light">Dates</p>
+                              <p className="text-charcoal font-medium">
+                                {retreat.tripDetails.dates}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Users
+                              size={16}
+                              className="text-gold mt-0.5 shrink-0"
+                            />
+                            <div>
+                              <p className="text-text-light">Group Size</p>
+                              <p className="text-charcoal font-medium">
+                                {retreat.tripDetails.groupSize}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <MapPin
+                              size={16}
+                              className="text-gold mt-0.5 shrink-0"
+                            />
+                            <div>
+                              <p className="text-text-light">Start / End</p>
+                              <p className="text-charcoal font-medium">
+                                {retreat.tripDetails.startEnd}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Compass
+                              size={16}
+                              className="text-gold mt-0.5 shrink-0"
+                            />
+                            <div>
+                              <p className="text-text-light">Activity Level</p>
+                              <p className="text-charcoal font-medium">
+                                {retreat.tripDetails.activityLevel}
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div className="flex items-start gap-2">
-                        <Users
-                          size={16}
-                          className="text-gold mt-0.5 shrink-0"
-                        />
-                        <div>
-                          <p className="text-text-light">Group Size</p>
-                          <p className="text-charcoal font-medium">
-                            {retreat.tripDetails.groupSize}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <MapPin
-                          size={16}
-                          className="text-gold mt-0.5 shrink-0"
-                        />
-                        <div>
-                          <p className="text-text-light">Start / End</p>
-                          <p className="text-charcoal font-medium">
-                            {retreat.tripDetails.startEnd}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Compass
-                          size={16}
-                          className="text-gold mt-0.5 shrink-0"
-                        />
-                        <div>
-                          <p className="text-text-light">Activity Level</p>
-                          <p className="text-charcoal font-medium">
-                            {retreat.tripDetails.activityLevel}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* Highlights */}
-                  <div className="mb-8">
-                    <h3 className="font-heading text-xl text-charcoal mb-4">
-                      Highlights
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {retreat.highlights.map((h) => (
-                        <div
-                          key={h.title}
-                          className="bg-cream rounded-xl p-4"
+                      {/* Highlights */}
+                      <div className="mb-8">
+                        <h4 className="font-heading text-xl text-charcoal mb-4">
+                          Highlights
+                        </h4>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {retreat.highlights.map((h) => (
+                            <div
+                              key={h.title}
+                              className="bg-cream rounded-xl p-4"
+                            >
+                              <h5 className="font-medium text-charcoal text-sm mb-1">
+                                {h.title}
+                              </h5>
+                              <p className="text-text-light text-sm leading-relaxed">
+                                {h.description}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Contact CTA */}
+                      <div className="bg-charcoal rounded-xl p-6 text-white">
+                        <p className="text-sm text-white/70 mb-2">
+                          Ready to join this sacred journey?
+                        </p>
+                        <p className="text-sm text-white/70 mb-4">
+                          Contact Masami to receive the full itinerary brochure
+                          or ask any questions.
+                        </p>
+                        <a
+                          href={`mailto:${retreat.contactEmail}`}
+                          className="btn-primary text-sm"
                         >
-                          <h4 className="font-medium text-charcoal text-sm mb-1">
-                            {h.title}
-                          </h4>
-                          <p className="text-text-light text-sm leading-relaxed">
-                            {h.description}
-                          </p>
-                        </div>
-                      ))}
+                          Contact Masami
+                        </a>
+                      </div>
                     </div>
-                  </div>
-
-                  {/* Contact CTA */}
-                  <div className="bg-charcoal rounded-xl p-6 text-white">
-                    <p className="text-sm text-white/70 mb-2">
-                      Ready to join this sacred journey?
-                    </p>
-                    <p className="text-sm text-white/70 mb-4">
-                      Contact Masami to receive the full itinerary brochure or
-                      ask any questions.
-                    </p>
-                    <a
-                      href={`mailto:${retreat.contactEmail}`}
-                      className="btn-primary text-sm"
-                    >
-                      Contact Masami
-                    </a>
-                  </div>
+                  </FadeIn>
                 </div>
-              </FadeIn>
+              </div>
+            ))}
           </div>
         </section>
-      ))}
+      )}
+
+      {/* Past Retreats */}
+      {pastRetreats.length > 0 && (
+        <section className="section-padding bg-cream-dark">
+          <div className="container-wide">
+            <FadeIn>
+              <div className="text-center mb-16">
+                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                  Archive
+                </p>
+                <h2 className="heading-lg text-charcoal">Past Retreats</h2>
+                <p className="text-text-light max-w-2xl mx-auto mt-4 text-body">
+                  A glimpse into the sacred journeys we have shared.
+                </p>
+              </div>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {pastRetreats.map((retreat, i) => (
+                <FadeIn key={retreat.slug} delay={i * 0.1}>
+                  <PastRetreatCard
+                    title={retreat.title}
+                    location={retreat.location}
+                    dates={retreat.dates}
+                    image={retreat.image}
+                    shortDescription={retreat.shortDescription}
+                  />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Custom Retreats for Groups */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <FadeIn direction="left">
+              <div>
+                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                  Bespoke Experiences
+                </p>
+                <h2 className="heading-lg text-charcoal mb-6">
+                  {customRetreats.title}
+                </h2>
+                <p className="text-text text-body mb-4">
+                  {customRetreats.description}
+                </p>
+                <p className="text-text-light mb-8">
+                  {customRetreats.longDescription}
+                </p>
+                <a
+                  href={`mailto:${customRetreats.contactEmail}?subject=Custom Retreat Enquiry`}
+                  className="btn-primary"
+                >
+                  Enquire About a Custom Retreat
+                </a>
+              </div>
+            </FadeIn>
+            <FadeIn direction="right" delay={0.1}>
+              <div className="bg-cream rounded-2xl p-8">
+                <h3 className="font-heading text-xl text-charcoal mb-6">
+                  What We Offer
+                </h3>
+                <div className="space-y-5">
+                  {customRetreats.offerings.map((offering) => (
+                    <div key={offering.title} className="flex items-start gap-3">
+                      <CheckCircle
+                        size={20}
+                        className="text-gold mt-0.5 shrink-0"
+                      />
+                      <div>
+                        <h4 className="font-medium text-charcoal text-sm mb-1">
+                          {offering.title}
+                        </h4>
+                        <p className="text-text-light text-sm leading-relaxed">
+                          {offering.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
       {/* Inquiry Form */}
       <section id="inquiry" className="section-padding bg-white">

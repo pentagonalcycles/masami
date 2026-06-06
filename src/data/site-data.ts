@@ -305,8 +305,41 @@ export const featuredRetreats = [
         "Moderate. Some days will involve trekking to mountain summits",
     },
     contactEmail: "masami@luminousearth.com",
+    status: "upcoming",
   },
 ];
+
+export const customRetreats = {
+  title: "Custom Retreats for Groups",
+  subtitle: "A Journey Tailored to Your Circle",
+  description:
+    "Masami offers bespoke retreat experiences designed specifically for your group. Whether you are a circle of friends, a corporate team, or a spiritual community seeking transformation, Masami will craft a sacred journey that meets your unique intentions and needs.",
+  longDescription:
+    "From selecting the perfect location to curating daily practices, energy healing sessions, and sacred site visits, every element is customised to support your group's collective journey. Masami draws on her expertise in craniosacral therapy, energy healing, and sacred pilgrimage to create an unforgettable experience of depth, connection, and renewal.",
+  offerings: [
+    {
+      title: "Location Scouting",
+      description:
+        "Masami will help you find the perfect sacred destination that aligns with your group's energy and intentions.",
+    },
+    {
+      title: "Curated Itinerary",
+      description:
+        "A bespoke programme of healing practices, meditation, movement, and sacred site visits tailored to your group.",
+    },
+    {
+      title: "Energy Healing Sessions",
+      description:
+        "Individual and group energy healing sessions woven throughout the retreat to support deep transformation.",
+    },
+    {
+      title: "Ongoing Support",
+      description:
+        "Integration guidance and follow-up support to help your group carry the retreat's gifts into daily life.",
+    },
+  ],
+  contactEmail: "masami@luminousearth.com",
+};
 
 export const qualifications = [
   {

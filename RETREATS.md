@@ -63,6 +63,16 @@ You will see the existing retreat(s) listed. **Copy the last retreat block** (fr
 | `highlights` | List of 4–6 experiences | See format below |
 | `tripDetails` | Practical info | See format below |
 | `contactEmail` | Email for inquiries | `"masami@luminousearth.com"` |
+| `status` | **Critical:** Where it appears on the page | `"upcoming"` or `"past"` |
+
+### How `status` Works
+
+The `status` field controls which section of the retreats page the retreat appears in:
+
+- `"upcoming"` — Shown in the **Upcoming Retreats** section with full details (flyer, description, trip details, highlights, contact button)
+- `"past"` — Shown in the **Past Retreats** section as a compact card (image, title, dates, location, brief description)
+
+**When a retreat finishes, simply change its `status` from `"upcoming"` to `"past"`.** The retreat will automatically move from the Upcoming section to the Past section. No other changes needed.
 
 ### Highlights Format
 
@@ -185,6 +195,7 @@ Here is a full example you can copy and adapt:
       activityLevel: "Moderate. Some walking on uneven terrain",
     },
     contactEmail: "masami@luminousearth.com",
+    status: "upcoming",
   },
 ```
 
