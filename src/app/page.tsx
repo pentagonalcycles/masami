@@ -8,6 +8,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { services, testimonials, retreats, featuredRetreats } from "@/data/site-data";
 import { MapPin, Clock, Award, Heart } from "lucide-react";
 import { SacredJourneysBanner } from "@/components/SacredJourneysBanner";
+import { ImageLightbox } from "@/components/ImageLightbox";
 import { RetreatFeatureCard } from "@/components/RetreatFeatureCard";
 
 export default function Home() {
@@ -225,6 +226,55 @@ export default function Home() {
               </Link>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Sacred Journeys - Two Column */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="left">
+              <ImageLightbox
+                src="https://static.wixstatic.com/media/97e6aa_c21d0285d26247ccafb7474abddf9489~mv2.jpeg"
+                alt="Sacred journeys and pilgrimages"
+                className="relative aspect-[4/5] rounded-2xl overflow-hidden block w-full"
+              >
+                <Image
+                  src="https://static.wixstatic.com/media/97e6aa_c21d0285d26247ccafb7474abddf9489~mv2.jpeg"
+                  alt="Sacred journeys and pilgrimages"
+                  fill
+                  className="object-cover hover:opacity-90 transition-opacity"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </ImageLightbox>
+            </FadeIn>
+            <FadeIn direction="right" delay={0.1}>
+              <div>
+                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                  Sacred Journeys
+                </p>
+                <h2 className="heading-lg text-charcoal mb-6">
+                  Experience<br />Sacred Journeys
+                </h2>
+                <p className="text-text text-body mb-4">
+                  Join Masami on a transformative journey to connect with ancient
+                  wisdom traditions and elevate your spiritual consciousness.
+                  Pilgrimages offer a unique opportunity to step away from
+                  everyday life and immerse yourself in the beauty and
+                  tranquility of sacred spaces.
+                </p>
+                <p className="text-text-light mb-8">
+                  Surrounded by breathtaking landscapes, engaged in deep
+                  meditation, and sharing profound experiences with a
+                  like-minded community. Return home feeling refreshed,
+                  rejuvenated, and inspired.
+                </p>
+                <Link href="/retreats" className="btn-primary">
+                  Learn More
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
