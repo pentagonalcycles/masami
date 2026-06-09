@@ -66,10 +66,10 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium text-charcoal">Email</p>
                         <a
-                          href="mailto:hello@luminousrebirth.com"
+                          href="mailto:masami@luminousrebirth.com"
                           className="text-text-light text-sm hover:text-gold transition-colors"
                         >
-                          hello@luminousrebirth.com
+masami@luminousrebirth.com
                         </a>
                       </div>
                     </div>

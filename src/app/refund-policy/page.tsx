@@ -51,8 +51,8 @@ export default function RefundPolicyPage() {
             <h2 className="heading-sm text-charcoal">4. How to Request a Refund</h2>
             <p>
               Contact us at{" "}
-              <a href="mailto:hello@luminousrebirth.com" className="text-gold hover:underline">
-                hello@luminousrebirth.com
+              <a href="mailto:masami@luminousrebirth.com" className="text-gold hover:underline">
+masami@luminousrebirth.com
               </a>{" "}
               with your booking details and reason for the refund request.
             </p>

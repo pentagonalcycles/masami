@@ -211,7 +211,7 @@ export default function Home() {
                 <div className="bg-cream rounded-xl p-4">
                   <p className="text-sm text-text-light">Booking</p>
                   <p className="text-charcoal font-medium text-sm">
-                    babyclinicsomerset@gmail.com
+                    masami@luminousrebirth.com
                   </p>
                 </div>
                 <div className="bg-cream rounded-xl p-4">

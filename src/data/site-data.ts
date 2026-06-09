@@ -304,7 +304,7 @@ export const featuredRetreats = [
       activityLevel:
         "Moderate. Some days will involve trekking to mountain summits",
     },
-    contactEmail: "masami@luminousearth.com",
+    contactEmail: "masami@luminousrebirth.com",
     status: "upcoming",
   },
 ];
@@ -338,7 +338,7 @@ export const customRetreats = {
         "Integration guidance and follow-up support to help your group carry the retreat's gifts into daily life.",
     },
   ],
-  contactEmail: "masami@luminousearth.com",
+  contactEmail: "masami@luminousrebirth.com",
 };
 
 export const qualifications = [

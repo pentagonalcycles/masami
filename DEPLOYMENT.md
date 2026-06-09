@@ -44,13 +44,16 @@ Change your nameservers to:
 - `ns1.vercel-dns.com`
 - `ns2.vercel-dns.com`
 
-### Option B: Using CNAME/A Records
-If you want to keep your current DNS provider:
+### Option B: Using CNAME/A Records (Used for this project)
+Since the domain is registered with NameCheap and the `book` subdomain must remain pointing to Wix, we keep DNS at NameCheap:
 
 | Type | Name | Value |
 |---|---|---|
 | CNAME | `www` | `cname.vercel-dns.com` |
-| A | `@` | `76.76.21.21` |
+| A | `@` | `216.198.79.1` |
+| CNAME | `book` | `cdn1.wixdns.net` |
+
+**Note:** Always verify the exact A record IP in your Vercel Dashboard under **Settings > Domains**. Use the IP Vercel recommends for your project.
 
 DNS propagation can take up to 48 hours but usually completes within a few hours.
 
@@ -98,13 +101,12 @@ If something breaks after a deploy:
 
 ## Wix Migration Checklist
 
-Before cancelling the Wix subscription:
+**Do not cancel the Wix subscription.** The `book.luminousrebirth.com` subdomain depends on the Wix site remaining published and the Bookings app active. You may downgrade to a cheaper Wix plan if it still supports Bookings, but the site must stay live.
 
-- [ ] Verify the new site is live and working on Vercel
+- [x] Verify the new site is live and working on Vercel
 - [ ] Download all original images from Wix media library
 - [ ] Export any client data from Wix Bookings
-- [ ] Verify Wix booking links work correctly
+- [x] Verify Wix booking links work correctly
 - [ ] Update any external links pointing to the old Wix site
 - [ ] Confirm all email addresses are updated
 - [ ] Run a final test of all pages, forms, and links
-- [ ] Cancel Wix subscription

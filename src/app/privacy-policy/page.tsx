@@ -61,8 +61,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="heading-sm text-charcoal">6. Contact</h2>
             <p>
               For any privacy-related enquiries, contact us at{" "}
-              <a href="mailto:hello@luminousrebirth.com" className="text-gold hover:underline">
-                hello@luminousrebirth.com
+              <a href="mailto:masami@luminousrebirth.com" className="text-gold hover:underline">
+masami@luminousrebirth.com
               </a>.
             </p>
           </div>

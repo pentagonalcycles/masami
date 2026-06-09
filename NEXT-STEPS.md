@@ -4,10 +4,10 @@ Tasks that still need to be completed before and after launch.
 
 ## Critical (Must Do Before Launch)
 
-### 1. Verify Wix Booking Links (Required for Bookings)
-- The `bookingUrl` values in `src/data/site-data.ts` point to the existing Wix Bookings calendar pages
-- Test each booking link to confirm it opens the correct Wix calendar
-- Ensure the Wix Bookings service remains active while the new site is live
+### 1. Verify Wix Booking Links (Required for Bookings) ✅
+- The `bookingUrl` values in `src/data/site-data.ts` point to `book.luminousrebirth.com/booking-calendar/...`
+- Booking links have been tested and confirmed working
+- Wix Bookings service remains active on the `book` subdomain
 
 ### 2. Wire Contact Form to Email Service
 - Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar
@@ -26,8 +26,10 @@ Tasks that still need to be completed before and after launch.
   - `hello@luminousrebirth.com` -- update in `ContactForm.tsx`, `Footer.tsx`, privacy/terms/refund pages
   - `babyclinicsomerset@gmail.com` -- already correct from original site
 
-### 5. Verify Domain and DNS
-- Domain `luminousrebirth.com` must point to Vercel
+### 5. Verify Domain and DNS ✅
+- `www.luminousrebirth.com` points to Vercel via CNAME → `cname.vercel-dns.com`
+- `luminousrebirth.com` (root) points to Vercel via A record → `216.198.79.1`
+- `book.luminousrebirth.com` points to Wix via CNAME → `cdn1.wixdns.net`
 - See [DEPLOYMENT.md](./DEPLOYMENT.md) for DNS configuration
 
 ## Important (Do Soon After Launch)

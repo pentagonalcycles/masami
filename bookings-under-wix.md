@@ -10,21 +10,27 @@ The new Next.js website is deployed on Vercel and will eventually replace the Wi
 
 ### Step 1: Connect the Subdomain in Wix
 
-1. Log in to the [Wix Dashboard](https://www.wix.com/dashboard/)
-2. Go to **Settings > Domains**
-3. Click **Connect a domain you already own**
-4. Enter `book.luminousrebirth.com`
-5. Wix will display DNS records to add (usually a CNAME pointing to `www21.wixdns.net` or a similar Wix DNS target). Copy these values.
+1. Log in to your [Wix Account](https://www.wix.com/account/domains)
+2. Go to **Domains** (account-level, not the site dashboard)
+3. Click **Add an Existing Domain > Connect a domain you already own**
+4. Select the Luminous Rebirth site and enter `book.luminousrebirth.com`
+5. Wix will display DNS records to add (usually a CNAME pointing to `cdn1.wixdns.net`). Copy these values.
 
-### Step 2: Add DNS Records
+**Important:** If `luminousrebirth.com` is already connected to this Wix site as a primary domain, you must first **unassign** it. Wix redirects all non-primary domains to the primary domain by default, which will prevent `book.luminousrebirth.com` from resolving independently.
 
-In your domain registrar or DNS provider (wherever you manage DNS for `luminousrebirth.com`), add the following record:
+### Step 2: Configure DNS Records
 
-| Type  | Name  | Value                           |
-|-------|-------|---------------------------------|
-| CNAME | `book`| *(Paste the value from Wix)*    |
+If your domain registrar is **NameCheap** (as it is for `luminousrebirth.com`):
 
-**Note:** Do not modify the existing `www` or root (`@`) records yet. Only add the `book` subdomain.
+1. In NameCheap, go to **Domain List > Manage > Advanced DNS**
+2. Click **Change DNS Type** and select **Namecheap BasicDNS**
+3. Add/update the following records:
+
+| Type    | Name  | Value                           |
+|---------|-------|---------------------------------|
+| CNAME   | `book`| `cdn1.wixdns.net`               |
+
+Keep any existing TXT records needed for email (SPF/DKIM). Remove old Wix A/CNAME records for `@` and `www`.
 
 Wait for DNS propagation. This can take anywhere from a few minutes to 48 hours.
 
@@ -58,11 +64,13 @@ Then commit and push the changes.
 
 After confirming bookings work on the subdomain:
 
-1. In your DNS provider, update the main domain records to point to Vercel:
+1. In NameCheap (**Advanced DNS**), add the following records:
    - `www` CNAME → `cname.vercel-dns.com`
-   - `@` A record → `76.76.21.21`
-2. In the [Vercel Dashboard](https://vercel.com/), add `www.luminousrebirth.com` as a custom domain
+   - `@` A record → *(use the IP shown in your Vercel Dashboard)*. At the time of writing, Vercel recommended `216.198.79.1` for this project.
+2. In the [Vercel Dashboard](https://vercel.com/), go to your project → **Settings > Domains** and add `www.luminousrebirth.com`
 3. Wait for DNS propagation and verify the new site loads at `www.luminousrebirth.com`
+
+**Note:** If Vercel shows a different A record IP than the one listed above, always use the IP that Vercel recommends for your specific project.
 
 ### Step 6: Keep the Wix Subscription Active
 
@@ -70,9 +78,9 @@ Do not cancel the Wix subscription. The Wix site must remain published and the B
 
 ## Post-Migration Checklist
 
-- [ ] `book.luminousrebirth.com` loads the Wix site
-- [ ] All booking calendar links work on the subdomain
-- [ ] `www.luminousrebirth.com` loads the new Vercel site
-- [ ] Booking buttons on the new site link to the subdomain
-- [ ] Wix subscription remains active
+- [x] `book.luminousrebirth.com` loads the Wix site
+- [x] All booking calendar links work on the subdomain
+- [x] `www.luminousrebirth.com` loads the new Vercel site
+- [x] Booking buttons on the new site link to the subdomain
+- [x] Wix subscription remains active
 - [ ] Test a full booking flow from the new site
