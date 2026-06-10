@@ -119,7 +119,6 @@ export default function Home() {
                   location={service.location}
                   tagline={service.tagline}
                   duration={service.duration}
-                  price={service.price}
                   image={service.image}
                   bookingType={service.bookingType as "book" | "request"}
                 />
