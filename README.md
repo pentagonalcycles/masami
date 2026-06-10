@@ -62,17 +62,21 @@ src/
     terms/page.tsx
     refund-policy/page.tsx
   components/
-    Header.tsx              # Sticky nav with mobile menu
+    Header.tsx              # Sticky nav with scroll-aware light/dark mode
     Footer.tsx              # Site footer with links
     FadeIn.tsx              # Scroll-triggered animation wrapper
     ServiceCard.tsx         # Service card component
     ServicePageTemplate.tsx # Shared template for service detail pages
-    TestimonialCard.tsx     # Testimonial card + filterable grid
+    TestimonialCard.tsx     # Individual testimonial card
+    TestimonialCarousel.tsx # Manual carousel with arrow navigation (1/3 cards responsive)
     NewsletterSignup.tsx    # Email capture form
     ContactForm.tsx         # Contact form component
     WixBookingsEmbed.tsx    # Wix Bookings integration
     RetreatInquiryForm.tsx  # Retreat interest/inquiry form
     RetreatFeatureCard.tsx  # Featured retreat card (home page)
+    SacredJourneysBanner.tsx # Full-width banner image
+    ImageLightbox.tsx       # Click-to-expand image wrapper
+    PastRetreatCard.tsx     # Compact past retreat card
   data/
     site-data.ts            # All content data (services, testimonials, qualifications, retreats, featuredRetreats)
 ```
