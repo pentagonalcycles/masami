@@ -351,9 +351,10 @@ export const customRetreats = {
 
 export const qualifications = [
   {
-    name: "College of Craniosacral Therapy",
-    period: "Jul 2024 to Jun 2025",
-    detail: "Member of the Craniosacral Therapy Association (CSTA) UK",
+    name: "Craniosacral Therapy",
+    period: "",
+    detail:
+      "Jul 2024 to Jun 2025 - College of Craniosacral Therapy CCST (London)\nMar 2026 - Voice and the Hyoid with Katherine Ukleja\nApr 2026 - Brain Masterclass, Part 1&2 with Etienne Piersman\nMember of the Craniosacral Therapy Association (CSTA) UK",
     image:
       "https://static.wixstatic.com/media/97e6aa_75e93a7a80fe4053bfb1589f6f5e013b~mv2.png",
   },

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { RetreatInquiryForm } from "@/components/RetreatInquiryForm";
 import { PastRetreatCard } from "@/components/PastRetreatCard";
-import { retreats, featuredRetreats, customRetreats } from "@/data/site-data";
+import { retreats, featuredRetreats } from "@/data/site-data";
 import {
   MapPin,
   Users,
@@ -10,7 +10,6 @@ import {
   Heart,
   Compass,
   Calendar,
-  CheckCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -348,61 +347,6 @@ export default function RetreatsPage() {
           </div>
         </section>
       )}
-
-      {/* Custom Retreats for Groups */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            <FadeIn direction="left">
-              <div>
-                <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
-                  Bespoke Experiences
-                </p>
-                <h2 className="heading-lg text-charcoal mb-6">
-                  {customRetreats.title}
-                </h2>
-                <p className="text-text text-body mb-4">
-                  {customRetreats.description}
-                </p>
-                <p className="text-text-light mb-8">
-                  {customRetreats.longDescription}
-                </p>
-                <a
-                  href={`mailto:${customRetreats.contactEmail}?subject=Custom Retreat Enquiry`}
-                  className="btn-primary"
-                >
-                  Enquire About a Custom Retreat
-                </a>
-              </div>
-            </FadeIn>
-            <FadeIn direction="right" delay={0.1}>
-              <div className="bg-cream rounded-2xl p-8">
-                <h3 className="font-heading text-xl text-charcoal mb-6">
-                  What We Offer
-                </h3>
-                <div className="space-y-5">
-                  {customRetreats.offerings.map((offering) => (
-                    <div key={offering.title} className="flex items-start gap-3">
-                      <CheckCircle
-                        size={20}
-                        className="text-gold mt-0.5 shrink-0"
-                      />
-                      <div>
-                        <h4 className="font-medium text-charcoal text-sm mb-1">
-                          {offering.title}
-                        </h4>
-                        <p className="text-text-light text-sm leading-relaxed">
-                          {offering.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
 
       {/* Inquiry Form */}
       <section id="inquiry" className="section-padding bg-white">

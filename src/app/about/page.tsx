@@ -157,8 +157,10 @@ export default function AboutPage() {
                     <h3 className="heading-sm text-charcoal mb-1">
                       {q.name}
                     </h3>
-                    <p className="text-gold text-sm mb-2">{q.period}</p>
-                    <p className="text-text-light">{q.detail}</p>
+                    {q.period && (
+                      <p className="text-gold text-sm mb-2">{q.period}</p>
+                    )}
+                    <p className="text-text-light whitespace-pre-line">{q.detail}</p>
                   </div>
                 </div>
               </FadeIn>
