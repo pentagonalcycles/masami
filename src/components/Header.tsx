@@ -21,8 +21,6 @@ const navLinks = [
   },
   { href: "/about", label: "About" },
   { href: "/retreats", label: "Retreats" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/journal", label: "Journal" },
   { href: "/contact", label: "Contact" },
 ];
 
