@@ -42,7 +42,7 @@ export function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-cream/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          : "bg-charcoal/40 backdrop-blur-sm"
       }`}
     >
       <div className="container-wide">
@@ -53,7 +53,9 @@ export function Header() {
               alt="Luminous Rebirth"
               width={180}
               height={50}
-              className="h-10 md:h-12 w-auto"
+              className={`h-11 md:h-14 w-auto transition-all duration-500 ${
+                scrolled ? "" : "brightness-0 invert"
+              }`}
               priority
             />
           </Link>
@@ -69,7 +71,9 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-text hover:text-gold transition-colors duration-300 text-sm tracking-wide uppercase font-medium"
+                    className={`transition-colors duration-300 text-sm tracking-wide uppercase font-medium ${
+                      scrolled ? "text-text hover:text-gold" : "text-white hover:text-gold"
+                    }`}
                   >
                     {link.label}
                   </Link>
@@ -99,7 +103,9 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text hover:text-gold transition-colors duration-300 text-sm tracking-wide uppercase font-medium"
+                  className={`transition-colors duration-300 text-sm tracking-wide uppercase font-medium ${
+                    scrolled ? "text-text hover:text-gold" : "text-white hover:text-gold"
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -112,7 +118,9 @@ export function Header() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden relative z-10 p-2 text-charcoal"
+            className={`lg:hidden relative z-10 p-2 transition-colors duration-500 ${
+              scrolled ? "text-charcoal" : "text-white"
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
