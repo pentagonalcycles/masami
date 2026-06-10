@@ -161,7 +161,7 @@ export default function Home() {
                 <p className="text-text-light mb-6">
                   Though raised in France, Masami grew up immersed in her
                   Japanese legacy centred on energy and the unmanifest. Her path
-                  has been shaped by yoga, ultra-running, meditation, and a
+                  has been shaped by yoga, extreme endurance sports, meditation, and a
                   decade of exploration in energy healing and craniosacral
                   therapy.
                 </p>
@@ -221,9 +221,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <Link href="/services/mother-baby" className="btn-primary text-sm">
-                Learn More
-              </Link>
             </div>
           </FadeIn>
         </div>

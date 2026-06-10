@@ -46,7 +46,7 @@ export default function AboutPage() {
                     across the US, Europe, and Southeast Asia, a deep desire
                     emerged to align my life with my true self. This path began
                     with practices focused on physical awakening, including yoga,
-                    triathlon, and ultra-running.
+                    including yoga, triathlon, and extreme endurance sports.
                   </p>
                   <p className="text-text text-body leading-relaxed mb-6">
                     A decade ago, this pursuit deepened, leading me to explore

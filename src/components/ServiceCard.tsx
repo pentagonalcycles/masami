@@ -7,7 +7,7 @@ interface ServiceCardProps {
   location: string;
   tagline: string;
   duration: string;
-  price: string;
+  price?: string;
   image: string;
   bookingType: "book" | "request";
 }
@@ -45,8 +45,12 @@ export function ServiceCard({
         <div className="flex items-center justify-between mt-4 pt-4 border-t border-cream-dark">
           <div className="text-sm text-text-light">
             <span>{duration}</span>
-            <span className="mx-2">|</span>
-            <span className="text-gold font-semibold">{price}</span>
+            {price && (
+              <>
+                <span className="mx-2">|</span>
+                <span className="text-gold font-semibold">{price}</span>
+              </>
+            )}
           </div>
           <Link
             href={`/services/${slug}`}
