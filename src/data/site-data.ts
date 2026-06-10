@@ -218,6 +218,14 @@ export const testimonials = [
     location: "Portugal",
     category: ["energy-healing"],
   },
+  {
+    id: 9,
+    quote: "Amazing healing session with Masami. Highly recommended.",
+    name: "Marco",
+    title: "",
+    location: "London",
+    category: ["craniosacral", "energy-healing"],
+  },
 ];
 
 export const retreats = {
