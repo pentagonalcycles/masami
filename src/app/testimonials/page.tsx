@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/FadeIn";
-import { TestimonialGrid } from "@/components/TestimonialCard";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { testimonials } from "@/data/site-data";
 
 export default function TestimonialsPage() {
@@ -27,7 +27,7 @@ export default function TestimonialsPage() {
       <section className="section-padding">
         <div className="container-wide">
           <FadeIn>
-            <TestimonialGrid testimonials={testimonials} />
+            <TestimonialCarousel testimonials={testimonials} showFilter />
           </FadeIn>
         </div>
       </section>

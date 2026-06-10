@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 import { WixBookingLink } from "@/components/WixBookingsEmbed";
 import { testimonials } from "@/data/site-data";
-import { TestimonialCard } from "@/components/TestimonialCard";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { Clock, MapPin, PoundSterling, Check } from "lucide-react";
 
 interface ServicePageProps {
@@ -173,13 +173,7 @@ export function ServicePageTemplate({
                 </h2>
               </div>
             </FadeIn>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {relatedTestimonials.map((t, i) => (
-                <FadeIn key={t.id} delay={i * 0.1}>
-                  <TestimonialCard testimonial={t} />
-                </FadeIn>
-              ))}
-            </div>
+            <TestimonialCarousel testimonials={relatedTestimonials} />
           </div>
         </section>
       )}

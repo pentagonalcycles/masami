@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 import { ServiceCard } from "@/components/ServiceCard";
-import { TestimonialCard } from "@/components/TestimonialCard";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ContactForm } from "@/components/ContactForm";
 import { services, testimonials, retreats, featuredRetreats } from "@/data/site-data";
@@ -330,13 +330,7 @@ export default function Home() {
               </h2>
             </div>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredTestimonials.map((t, i) => (
-              <FadeIn key={t.id} delay={i * 0.1}>
-                <TestimonialCard testimonial={t} />
-              </FadeIn>
-            ))}
-          </div>
+          <TestimonialCarousel testimonials={featuredTestimonials} />
           <FadeIn>
             <div className="text-center mt-10">
               <Link href="/testimonials" className="btn-secondary">
