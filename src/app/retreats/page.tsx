@@ -97,74 +97,6 @@ export default function RetreatsPage() {
         </div>
       </section>
 
-      {/* Highlights */}
-      <section className="section-padding bg-cream-dark">
-        <div className="container-wide">
-          <FadeIn>
-            <div className="text-center mb-16">
-              <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
-                What Awaits You
-              </p>
-              <h2 className="heading-lg text-charcoal">Retreat Highlights</h2>
-            </div>
-          </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: Sparkles,
-                title: "Energy Healing",
-                description:
-                  "Experience Masami's unique blend of energy healing practices in powerful, sacred settings.",
-              },
-              {
-                icon: MapPin,
-                title: "Sacred Locations",
-                description:
-                  "Journey to ancient sites charged with spiritual significance and natural beauty.",
-              },
-              {
-                icon: Users,
-                title: "Intimate Groups",
-                description:
-                  "Small groups ensure a deeply personal and transformative experience for every participant.",
-              },
-              {
-                icon: Heart,
-                title: "Holistic Wellness",
-                description:
-                  "Nourish body, mind, and spirit through guided meditation, movement, and healing practices.",
-              },
-              {
-                icon: Compass,
-                title: "Inner Exploration",
-                description:
-                  "Gain new perspectives and deepen your connection to your authentic self and life purpose.",
-              },
-              {
-                icon: Sparkles,
-                title: "Community",
-                description:
-                  "Connect with like-minded souls on a shared journey of growth and self-discovery.",
-              },
-            ].map((item, i) => (
-              <FadeIn key={item.title} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4">
-                    <item.icon className="text-gold" size={22} />
-                  </div>
-                  <h3 className="font-heading text-xl text-charcoal mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-text-light text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Upcoming Retreats */}
       {upcomingRetreats.length > 0 && (
         <section className="section-padding bg-white">
@@ -367,6 +299,74 @@ export default function RetreatsPage() {
           <FadeIn delay={0.1}>
             <RetreatInquiryForm />
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Highlights */}
+      <section className="section-padding bg-cream-dark">
+        <div className="container-wide">
+          <FadeIn>
+            <div className="text-center mb-16">
+              <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
+                What Awaits You
+              </p>
+              <h2 className="heading-lg text-charcoal">Retreat Highlights</h2>
+            </div>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Sparkles,
+                title: "Energy Healing",
+                description:
+                  "Experience Masami's unique blend of energy healing practices in powerful, sacred settings.",
+              },
+              {
+                icon: MapPin,
+                title: "Sacred Locations",
+                description:
+                  "Journey to ancient sites charged with spiritual significance and natural beauty.",
+              },
+              {
+                icon: Users,
+                title: "Intimate Groups",
+                description:
+                  "Small groups ensure a deeply personal and transformative experience for every participant.",
+              },
+              {
+                icon: Heart,
+                title: "Holistic Wellness",
+                description:
+                  "Nourish body, mind, and spirit through guided meditation, movement, and healing practices.",
+              },
+              {
+                icon: Compass,
+                title: "Inner Exploration",
+                description:
+                  "Gain new perspectives and deepen your connection to your authentic self and life purpose.",
+              },
+              {
+                icon: Sparkles,
+                title: "Community",
+                description:
+                  "Connect with like-minded souls on a shared journey of growth and self-discovery.",
+              },
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.1}>
+                <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+                    <item.icon className="text-gold" size={22} />
+                  </div>
+                  <h3 className="font-heading text-xl text-charcoal mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-text-light text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
     </>
