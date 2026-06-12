@@ -25,6 +25,8 @@ Instructions for AI coding agents working on this project.
 - Service pages use the shared `ServicePageTemplate` component
 - Retreat page (`/retreats`) displays featured retreats from `site-data.ts` (general intro + featured retreat details + inquiry form)
 - Retreat page (`/retreats`) uses `RetreatInquiryForm` for interest registration
+- Cancellation policy page at `/cancellation-policy`
+- Home page shows `RetreatFeatureCard` for upcoming retreats
 - Home page shows `RetreatFeatureCard` for upcoming retreats
 - Use `FadeIn` wrapper for scroll-triggered animations
 - Tailwind classes only -- no inline styles, no CSS modules
@@ -44,7 +46,8 @@ Instructions for AI coding agents working on this project.
 - Do NOT add dependencies without checking `package.json` first
 - Images from `static.wixstatic.com` are already allowed in `next.config.ts`
 - The booking system is Wix Bookings (links in `WixBookingsEmbed.tsx`)
-- Contact/newsletter forms are currently simulated (no API routes yet)
+- Contact/newsletter forms use Resend API (requires `RESEND_API_KEY` env var)
+- Retreat inquiry form also uses Resend API
 - Do not hardcode dates or prices inline -- use `site-data.ts`
 - Lint and build must pass: `npm run lint && npm run build`
 
@@ -53,7 +56,7 @@ Instructions for AI coding agents working on this project.
 Referenced from `globals.css`:
 - Gold accent: `#C9A96E`
 - Cream background: `#FAF6F0`
-- Charcoal dark: `#1A1A2E`
+- Charcoal dark: `#890048`
 - Heading font: `font-heading` (Cormorant Garamond)
 - Body font: `font-body` (DM Sans)
 

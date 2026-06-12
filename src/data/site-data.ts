@@ -31,16 +31,16 @@ export const services = [
   {
     slug: "craniosacral-london",
     name: "Craniosacral Session",
-    location: "London",
-    fullName: "Craniosacral Session | London",
+    location: "Kensington, London",
+    fullName: "Craniosacral Session | Kensington, London",
     tagline: "Supporting your body's blueprint for optimal health",
     duration: "1 hr",
     price: "£100",
     priceAmount: 100,
     description:
-      "The same transformative craniosacral therapy, available in London. This session works with the subtle rhythms of your body to release deep-held tension and promote natural healing.",
+      "The same transformative craniosacral therapy, available in Kensington, London. This session works with the subtle rhythms of your body to release deep-held tension and promote natural healing.",
     whatToExpect: [
-      "A professional, calming London clinic environment",
+      "A professional, calming Kensington clinic environment",
       "Gentle, precise touch therapy",
       "A 60-minute deeply restorative session",
       "You remain fully clothed throughout",
@@ -130,7 +130,6 @@ export const services = [
       "Rapid response for urgent situations",
       "30-minute focused remote session",
       "Works to quickly resolve intense energy",
-      "Available via Zoom or phone",
     ],
     benefits: [
       "Immediate support in crisis situations",
@@ -255,7 +254,7 @@ export const retreats = {
     },
   ],
   inquiryNote:
-    "Upcoming retreat dates and locations are being finalised. Register your interest below and we will notify you as soon as details are confirmed.",
+    "Want to join our next retreat? Drop your info below to stay in the loop.",
 };
 
 export const featuredRetreats = [

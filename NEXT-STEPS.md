@@ -9,9 +9,9 @@ Tasks that still need to be completed before and after launch.
 - Booking links have been tested and confirmed working
 - Wix Bookings service remains active on the `book` subdomain
 
-### 2. Wire Contact Form to Email Service
-- Choose an email service: [Resend](https://resend.com) (recommended), SendGrid, or similar
-- Create an API route at `src/app/api/contact/route.ts`
+### 2. Wire Contact Form to Email Service ✅
+- Contact form now sends emails via Resend API at `src/app/api/contact/route.ts`
+- Requires `RESEND_API_KEY` environment variable in `.env.local` or Vercel dashboard
 - Update `src/components/ContactForm.tsx` to POST to the API route
 - Add environment variables for the API key
 

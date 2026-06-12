@@ -61,6 +61,10 @@ src/
     privacy-policy/page.tsx
     terms/page.tsx
     refund-policy/page.tsx
+    cancellation-policy/page.tsx
+    api/
+      contact/route.ts       # Contact form email API (Resend)
+      retreat-inquiry/route.ts # Retreat inquiry email API (Resend)
   components/
     Header.tsx              # Sticky nav with scroll-aware light/dark mode
     Footer.tsx              # Site footer with links
@@ -68,7 +72,7 @@ src/
     ServiceCard.tsx         # Service card component
     ServicePageTemplate.tsx # Shared template for service detail pages
     TestimonialCard.tsx     # Individual testimonial card
-    TestimonialCarousel.tsx # Manual carousel with arrow navigation (1/3 cards responsive)
+    TestimonialCarousel.tsx # Manual carousel with arrow navigation (1 card at a time)
     NewsletterSignup.tsx    # Email capture form
     ContactForm.tsx         # Contact form component
     WixBookingsEmbed.tsx    # Wix Bookings integration
@@ -92,7 +96,7 @@ Defined in `src/app/globals.css` using Tailwind v4 `@theme`:
 | `--color-gold-dark` | `#8B6F47` | Active/hover dark |
 | `--color-cream` | `#FAF6F0` | Page background |
 | `--color-cream-dark` | `#F0EBE3` | Section backgrounds |
-| `--color-charcoal` | `#1A1A2E` | Dark sections, headings |
+| `--color-charcoal` | `#890048` | Dark sections, headings |
 | `--color-text` | `#2D2D2D` | Body text |
 | `--color-text-light` | `#6B6B6B` | Secondary text |
 

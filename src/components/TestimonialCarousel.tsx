@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { TestimonialCard } from "./TestimonialCard";
 
@@ -19,18 +19,7 @@ interface TestimonialCarouselProps {
 }
 
 function useItemsPerView() {
-  const [itemsPerView, setItemsPerView] = useState(3);
-
-  useEffect(() => {
-    const update = () => {
-      setItemsPerView(window.innerWidth < 768 ? 1 : 3);
-    };
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
-
-  return itemsPerView;
+  return 1;
 }
 
 export function TestimonialCarousel({

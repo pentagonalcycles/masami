@@ -20,6 +20,7 @@ interface ServicePageProps {
   image: string;
   bookingType: "book" | "request";
   bookingUrl?: string;
+  afterBenefits?: React.ReactNode;
 }
 
 export function ServicePageTemplate({
@@ -35,6 +36,7 @@ export function ServicePageTemplate({
   image,
   bookingType,
   bookingUrl,
+  afterBenefits,
 }: ServicePageProps) {
   const relatedTestimonials = testimonials
     .filter((t) =>
@@ -117,6 +119,11 @@ export function ServicePageTemplate({
                   ))}
                 </ul>
               </FadeIn>
+              {afterBenefits && (
+                <FadeIn delay={0.25}>
+                  <div className="mt-8 text-text text-body">{afterBenefits}</div>
+                </FadeIn>
+              )}
             </div>
 
             {/* Sidebar */}

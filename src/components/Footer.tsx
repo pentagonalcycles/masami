@@ -172,6 +172,12 @@ export function Footer() {
             >
               Refund Policy
             </Link>
+            <Link
+              href="/cancellation-policy"
+              className="hover:text-gold transition-colors"
+            >
+              Cancellation Policy
+            </Link>
           </div>
         </div>
       </div>

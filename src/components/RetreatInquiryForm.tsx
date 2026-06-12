@@ -9,13 +9,12 @@ export function RetreatInquiryForm() {
     lastName: "",
     email: "",
     phone: "",
-    interests: "",
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -23,9 +22,17 @@ export function RetreatInquiryForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    // Simulate submission -- replace with actual API route
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setStatus("success");
+    try {
+      const response = await fetch("/api/retreat-inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!response.ok) throw new Error("Failed to send");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   };
 
   if (status === "success") {
@@ -95,23 +102,6 @@ export function RetreatInquiryForm() {
             className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-white text-text placeholder:text-text-muted focus:outline-none focus:border-gold transition-colors"
           />
         </div>
-      </div>
-      <div>
-        <label className="block text-sm text-text-light mb-1.5">
-          What interests you most?
-        </label>
-        <select
-          name="interests"
-          value={form.interests}
-          onChange={handleChange}
-          className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-white text-text focus:outline-none focus:border-gold transition-colors"
-        >
-          <option value="">Select an option</option>
-          <option value="pilgrimage">Sacred Site Pilgrimage</option>
-          <option value="healing-retreat">Healing Retreat</option>
-          <option value="meditation">Meditation & Energy Work</option>
-          <option value="all">All of the above</option>
-        </select>
       </div>
       <div>
         <label className="block text-sm text-text-light mb-1.5">

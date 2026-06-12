@@ -224,6 +224,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sacred Journeys */}
+      <SacredJourneysBanner heroImage={retreats.heroImage} />
+
       {/* Featured Retreat */}
       {featuredRetreats.length > 0 && (
         <section className="section-padding bg-cream-dark">
@@ -254,9 +257,6 @@ export default function Home() {
           </div>
         </section>
       )}
-
-      {/* Sacred Journeys */}
-      <SacredJourneysBanner heroImage={retreats.heroImage} />
 
       {/* Testimonials */}
       <section className="section-padding">
