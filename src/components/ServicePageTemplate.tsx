@@ -159,6 +159,11 @@ export function ServicePageTemplate({
                   <p className="text-xs text-text-muted text-center mt-3">
                     {bookingUrl ? "Opens Wix booking calendar" : "Contact us to book"}
                   </p>
+                  <div className="mt-4 pt-4 border-t border-cream-dark text-center">
+                    <Link href="/cancellation-policy" className="text-xs text-text-light hover:text-gold transition-colors">
+                      Cancellation Policy
+                    </Link>
+                  </div>
                 </div>
               </FadeIn>
             </div>
