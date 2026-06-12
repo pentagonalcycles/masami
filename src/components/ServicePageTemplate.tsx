@@ -79,12 +79,12 @@ export function ServicePageTemplate({
             {/* Main Content */}
             <div className="lg:col-span-3">
               <FadeIn>
-                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-8">
+                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-8 bg-cream-dark">
                   <Image
                     src={image}
                     alt={fullName}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="(max-width: 1024px) 100vw, 60vw"
                   />
                 </div>
