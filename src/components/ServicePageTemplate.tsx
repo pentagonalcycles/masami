@@ -54,7 +54,7 @@ export function ServicePageTemplate({
           <FadeIn>
             <Link
               href="/services"
-              className="text-text-light text-sm hover:text-gold transition-colors mb-4 inline-block"
+              className="text-white/50 text-sm hover:text-gold transition-colors mb-4 inline-block"
             >
               &larr; All Services
             </Link>
@@ -62,11 +62,11 @@ export function ServicePageTemplate({
               <span className="px-3 py-1 bg-gold/20 text-gold text-xs tracking-wider uppercase rounded-full">
                 {location}
               </span>
-              <span className="text-text-light text-sm">
+              <span className="text-white/50 text-sm">
                 {duration} | {price}
               </span>
             </div>
-            <h1 className="heading-xl text-text mb-4">{fullName}</h1>
+            <h1 className="heading-xl text-white mb-4">{fullName}</h1>
             <p className="text-gold font-heading text-xl italic">{tagline}</p>
           </FadeIn>
         </div>

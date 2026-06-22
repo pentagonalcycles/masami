@@ -20,7 +20,7 @@ export default function AboutPage() {
             <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
               Meet Masami
             </p>
-            <h1 className="heading-xl text-text mb-4">
+            <h1 className="heading-xl text-white mb-4">
               My Unfolding Journey to Self
             </h1>
           </FadeIn>
@@ -173,10 +173,10 @@ export default function AboutPage() {
       <section className="section-padding bg-charcoal">
         <div className="container-narrow text-center">
           <FadeIn>
-            <h2 className="heading-lg text-text mb-4">
+            <h2 className="heading-lg text-white mb-4">
               Ready to Begin Your Journey?
             </h2>
-            <p className="text-text-light mb-8 max-w-lg mx-auto">
+            <p className="text-white/80 mb-8 max-w-lg mx-auto">
               Experience the transformative power of craniosacral therapy and
               energy healing. Book your session today.
             </p>

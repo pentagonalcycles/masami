@@ -71,7 +71,7 @@ export default function Home() {
       {/* Trust Bar */}
       <section className="bg-charcoal py-6">
         <div className="container-wide">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-light text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-white/70 text-sm">
             <div className="flex items-center gap-2">
               <Award size={18} className="text-gold" />
               <span>CSTA Member</span>

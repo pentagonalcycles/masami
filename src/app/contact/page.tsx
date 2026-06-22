@@ -20,8 +20,8 @@ export default function ContactPage() {
             <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
               Get in Touch
             </p>
-            <h1 className="heading-xl text-text mb-4">Contact</h1>
-            <p className="text-text-light max-w-xl text-body">
+            <h1 className="heading-xl text-white mb-4">Contact</h1>
+            <p className="text-white/80 max-w-xl text-body">
               Have a question about sessions or want to discuss how
               craniosacral therapy can help? Masami will respond within 24-48
               hours.
