@@ -56,7 +56,7 @@ Instructions for AI coding agents working on this project.
 Referenced from `globals.css`:
 - Gold accent: `#C9A96E`
 - Cream background: `#FAF6F0`
-- Mary's Rose (charcoal): `#C2185B` — James L. Austin Rose, inspired by the rose symbolism of Mary Magdalene and the sacred feminine
+- Mary's Rose (charcoal): `#BE5A83` — James L. Austin Rose, inspired by the rose symbolism of Mary Magdalene and the sacred feminine
 - Heading font: `font-heading` (Cormorant Garamond)
 - Body font: `font-body` (DM Sans)
 

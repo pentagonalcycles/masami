@@ -96,7 +96,7 @@ Defined in `src/app/globals.css` using Tailwind v4 `@theme`:
 | `--color-gold-dark` | `#8B6F47` | Active/hover dark |
 | `--color-cream` | `#FAF6F0` | Page background |
 | `--color-cream-dark` | `#F0EBE3` | Section backgrounds |
-| `--color-charcoal` | `#C2185B` | Primary brand color, section backgrounds (James L. Austin Rose) |
+| `--color-charcoal` | `#BE5A83` | Primary brand color, section backgrounds (James L. Austin Rose) |
 | `--color-text` | `#2D2D2D` | Body text |
 | `--color-text-light` | `#6B6B6B` | Secondary text |
 
