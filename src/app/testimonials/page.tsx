@@ -14,8 +14,8 @@ export default function TestimonialsPage() {
             <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
               Client Experiences
             </p>
-            <h1 className="heading-xl text-white mb-4">Testimonials</h1>
-            <p className="text-white/70 max-w-xl text-body">
+            <h1 className="heading-xl text-text mb-4">Testimonials</h1>
+            <p className="text-text-light max-w-xl text-body">
               Real stories from those who have experienced the transformative
               power of craniosacral therapy and energy healing with Masami.
             </p>

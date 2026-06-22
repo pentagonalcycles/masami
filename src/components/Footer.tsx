@@ -5,7 +5,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal text-white/80">
+    <footer className="bg-charcoal text-text">
       <div className="container-wide py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
@@ -18,7 +18,7 @@ export function Footer() {
                 className="h-10 w-auto"
               />
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-white/60">
+            <p className="mt-4 text-sm leading-relaxed text-text-light">
               Craniosacral Therapy and Energy Healing in Glastonbury, London and
               remotely with Masami Noro.
             </p>
@@ -151,7 +151,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <div className="border-t border-text/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-text-muted">
           <p>&copy; {year} Luminous Rebirth. All rights reserved.</p>
           <div className="flex gap-6">
             <Link

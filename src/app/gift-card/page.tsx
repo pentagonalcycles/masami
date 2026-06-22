@@ -19,8 +19,8 @@ export default function GiftCardPage() {
             <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
               Give the Gift
             </p>
-            <h1 className="heading-xl text-white mb-4">eGift Card</h1>
-            <p className="text-white/70 max-w-xl text-body">
+            <h1 className="heading-xl text-text mb-4">eGift Card</h1>
+            <p className="text-text-light max-w-xl text-body">
               Share the gift of healing with someone you love. An eGift card can
               be used for any craniosacral therapy or energy healing session.
             </p>

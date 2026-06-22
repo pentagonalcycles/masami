@@ -46,10 +46,10 @@ export default function RetreatsPage() {
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <h1 className="heading-xl text-white mb-6">{retreats.title}</h1>
+              <h1 className="heading-xl text-text mb-6">{retreats.title}</h1>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-white/80 text-body max-w-lg mb-8">
+              <p className="text-text text-body max-w-lg mb-8">
                 {retreats.subtitle}
               </p>
             </FadeIn>
@@ -224,11 +224,11 @@ export default function RetreatsPage() {
                       </div>
 
                       {/* Contact CTA */}
-                      <div className="bg-charcoal rounded-xl p-6 text-white">
-                        <p className="text-sm text-white/70 mb-2">
+                      <div className="bg-charcoal rounded-xl p-6 text-text">
+                        <p className="text-sm text-text-light mb-2">
                           Ready to join this sacred journey?
                         </p>
-                        <p className="text-sm text-white/70 mb-4">
+                        <p className="text-sm text-text-light mb-4">
                           Contact Masami to receive the full itinerary brochure
                           or ask any questions.
                         </p>

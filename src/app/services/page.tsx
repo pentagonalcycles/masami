@@ -19,8 +19,8 @@ export default function ServicesPage() {
             <p className="text-gold tracking-[0.3em] uppercase text-sm mb-3">
               Healing Modalities
             </p>
-            <h1 className="heading-xl text-white mb-4">Services</h1>
-            <p className="text-white/70 max-w-xl text-body">
+            <h1 className="heading-xl text-text mb-4">Services</h1>
+            <p className="text-text-light max-w-xl text-body">
               Each session is uniquely tailored to support your body&apos;s
               natural healing capacity. Choose from in-person sessions in
               Glastonbury and London, or remote healing from anywhere in the

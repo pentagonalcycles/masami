@@ -6,8 +6,8 @@
   --color-gold-dark: #8B6F47;
   --color-cream: #FAF6F0;
   --color-cream-dark: #F0EBE3;
-  --color-charcoal: #890048;
-  --color-charcoal-light: #A00055;
+  --color-charcoal: #F7D1D4;
+  --color-charcoal-light: #FBE4E6;
   --color-text: #2D2D2D;
   --color-text-light: #6B6B6B;
   --color-text-muted: #999999;
@@ -90,8 +90,8 @@
   .gradient-overlay {
     background: linear-gradient(
       180deg,
-      rgba(137, 0, 72, 0.3) 0%,
-      rgba(137, 0, 72, 0.6) 100%
+      rgba(247, 209, 212, 0.3) 0%,
+      rgba(247, 209, 212, 0.6) 100%
     );
   }
 

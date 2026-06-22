@@ -96,7 +96,7 @@ Defined in `src/app/globals.css` using Tailwind v4 `@theme`:
 | `--color-gold-dark` | `#8B6F47` | Active/hover dark |
 | `--color-cream` | `#FAF6F0` | Page background |
 | `--color-cream-dark` | `#F0EBE3` | Section backgrounds |
-| `--color-charcoal` | `#890048` | Dark sections, headings |
+| `--color-charcoal` | `#F7D1D4` | Primary brand color, section backgrounds (Mary's Rose) |
 | `--color-text` | `#2D2D2D` | Body text |
 | `--color-text-light` | `#6B6B6B` | Secondary text |
 

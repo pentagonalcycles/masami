@@ -43,12 +43,12 @@ export function SacredJourneysBanner({ heroImage }: SacredJourneysBannerProps) {
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <h2 className="heading-lg text-white mb-4">
+              <h2 className="heading-lg text-text mb-4">
                 Experience Transformative Retreats
               </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-white/80 text-body mb-8">
+              <p className="text-text text-body mb-8">
                 Join Masami on pilgrimages to sacred sites, where ancient wisdom
                 meets deep healing. Immerse yourself in breathtaking landscapes,
                 guided meditation, and transformative energy work.

@@ -56,7 +56,7 @@ Instructions for AI coding agents working on this project.
 Referenced from `globals.css`:
 - Gold accent: `#C9A96E`
 - Cream background: `#FAF6F0`
-- Charcoal dark: `#890048`
+- Mary's Rose (charcoal): `#F7D1D4` — Inspired by the rose symbolism of Mary Magdalene and the sacred feminine
 - Heading font: `font-heading` (Cormorant Garamond)
 - Body font: `font-body` (DM Sans)
 

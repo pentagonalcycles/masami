@@ -22,7 +22,7 @@ export function NewsletterSignup() {
       <h3 className="font-heading text-2xl md:text-3xl text-gold mb-3">
         Join the Journey
       </h3>
-      <p className="text-white/70 mb-6 max-w-md mx-auto text-sm">
+      <p className="text-text-light mb-6 max-w-md mx-auto text-sm">
         Receive insights on craniosacral therapy, energy healing, and upcoming
         events. Delivered with care, never spam.
       </p>
@@ -41,7 +41,7 @@ export function NewsletterSignup() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
             required
-            className="flex-1 px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-gold transition-colors"
+            className="flex-1 px-5 py-3 rounded-full bg-white border border-cream-dark text-text placeholder:text-text-muted text-sm focus:outline-none focus:border-gold transition-colors"
           />
           <button
             type="submit"
