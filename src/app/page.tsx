@@ -22,11 +22,11 @@ export default function Home() {
             src="https://static.wixstatic.com/media/c1e158_b325459c93c3416eb9aab720e8f9a439~mv2.jpg"
             alt="Masami Noro, Craniosacral and Energy Healing"
             fill
-            className="object-cover"
+            className="object-cover brightness-125"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
         </div>
         <div className="container-wide relative z-10 pt-20">
           <div className="max-w-2xl">

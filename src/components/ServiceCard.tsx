@@ -29,10 +29,10 @@ export function ServiceCard({
           src={image}
           alt={`${name} in ${location}`}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          className="object-cover brightness-125 group-hover:scale-105 transition-transform duration-700"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         <div className="absolute bottom-4 left-4 right-4">
           <span className="inline-block px-3 py-1 bg-gold/90 text-white text-xs tracking-wider uppercase rounded-full">
             {location}

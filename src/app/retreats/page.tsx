@@ -27,16 +27,16 @@ export default function RetreatsPage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-charcoal">
+        <div className="absolute inset-0 bg-black">
           <Image
             src={retreats.heroImage}
             alt={retreats.title}
             fill
-            className="object-contain object-center"
+            className="object-contain object-center brightness-125"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
         </div>
         <div className="container-wide relative z-10 pt-20">
           <div className="max-w-2xl">

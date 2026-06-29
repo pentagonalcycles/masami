@@ -16,7 +16,7 @@ export function SacredJourneysBanner({ heroImage }: SacredJourneysBannerProps) {
   return (
     <>
       <section className="relative min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-charcoal">
+        <div className="absolute inset-0 bg-black">
           <button
             onClick={() => setLightboxOpen(true)}
             className="absolute inset-0 w-full h-full cursor-pointer"
@@ -26,11 +26,11 @@ export function SacredJourneysBanner({ heroImage }: SacredJourneysBannerProps) {
               src={heroImage}
               alt="Sacred Journeys & Retreats"
               fill
-              className="object-contain object-center hover:opacity-90 transition-opacity"
+              className="object-contain object-center brightness-125 hover:opacity-90 transition-opacity"
               sizes="100vw"
             />
           </button>
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent pointer-events-none" />
         </div>
         <div className="container-wide relative z-10">
           <div className="max-w-xl">
