@@ -16,7 +16,7 @@ export function SacredJourneysBanner({ heroImage }: SacredJourneysBannerProps) {
   return (
     <>
       <section className="relative min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-black">
+        <div className="absolute inset-0 bg-charcoal">
           <button
             onClick={() => setLightboxOpen(true)}
             className="absolute inset-0 w-full h-full cursor-pointer"

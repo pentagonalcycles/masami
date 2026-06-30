@@ -14,3 +14,9 @@ i like this colour but at the same time i notice that where there are pictures, 
 
 ## Prompt 5
 ok go ahead with option 4 and then commit and push but please be ready to undo this prompt in case i do not like the final result
+
+## Prompt 6
+i looked at the result and it is certainly a major improvement. there is an aspect however which is now emerging, namely looks like the images appear now with too much exposure or brightness. do you understand why this could now be the case and what would you suggest to do
+
+## Prompt 7
+yes i find your suggestion very good to remove rather than reduce or tighten

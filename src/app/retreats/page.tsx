@@ -27,7 +27,7 @@ export default function RetreatsPage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-black">
+        <div className="absolute inset-0 bg-charcoal">
           <Image
             src={retreats.heroImage}
             alt={retreats.title}
