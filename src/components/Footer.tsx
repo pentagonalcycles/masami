@@ -96,14 +96,6 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/journal"
-                  className="hover:text-gold transition-colors"
-                >
-                  Journal
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/gift-card"
                   className="hover:text-gold transition-colors"
                 >
