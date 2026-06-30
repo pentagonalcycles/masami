@@ -23,8 +23,8 @@ export function NewsletterSignup() {
         Join the Journey
       </h3>
       <p className="text-white/70 mb-6 max-w-md mx-auto text-sm">
-        Receive insights on craniosacral therapy, energy healing, and upcoming
-        events. Delivered with care, never spam.
+        Receive insights on craniosacral therapy, energy healing, upcoming events
+        and retreats.
       </p>
       {status === "success" ? (
         <p className="text-gold font-medium">
