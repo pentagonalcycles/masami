@@ -19,9 +19,13 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
       <div className="text-gold text-4xl font-heading leading-none mb-4">&ldquo;</div>
-      <p className="text-text leading-relaxed flex-1 italic font-heading text-lg">
-        {testimonial.quote}
-      </p>
+      <div className="text-text leading-relaxed flex-1 italic font-heading text-lg">
+        {testimonial.quote.split("\n\n").map((paragraph, i) => (
+          <p key={i} className={i > 0 ? "mt-4" : ""}>
+            {paragraph}
+          </p>
+        ))}
+      </div>
       <div className="mt-6 pt-4 border-t border-cream-dark">
         <p className="font-semibold text-charcoal">{testimonial.name}</p>
         {testimonial.title && (
