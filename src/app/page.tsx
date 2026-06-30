@@ -22,7 +22,7 @@ export default function Home() {
             src="https://static.wixstatic.com/media/c1e158_b325459c93c3416eb9aab720e8f9a439~mv2.jpg"
             alt="Masami Noro, Craniosacral and Energy Healing"
             fill
-            className="object-cover brightness-125"
+            className="object-cover"
             priority
             sizes="100vw"
           />

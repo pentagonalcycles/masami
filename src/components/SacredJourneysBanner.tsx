@@ -26,7 +26,7 @@ export function SacredJourneysBanner({ heroImage }: SacredJourneysBannerProps) {
               src={heroImage}
               alt="Sacred Journeys & Retreats"
               fill
-              className="object-contain object-center brightness-125 hover:opacity-90 transition-opacity"
+              className="object-contain object-center hover:opacity-90 transition-opacity"
               sizes="100vw"
             />
           </button>

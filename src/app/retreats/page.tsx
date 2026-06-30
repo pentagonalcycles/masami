@@ -32,7 +32,7 @@ export default function RetreatsPage() {
             src={retreats.heroImage}
             alt={retreats.title}
             fill
-            className="object-contain object-center brightness-125"
+            className="object-contain object-center"
             priority
             sizes="100vw"
           />

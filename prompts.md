@@ -8,3 +8,9 @@ in the last couple of sessions, i think, i made some experimentation with a vari
 
 ## Prompt 3
 please revise the code to implement the #890048 colour
+
+## Prompt 4
+i like this colour but at the same time i notice that where there are pictures, then this colour is making it more difficult to see the pictures. given that i would like to keep this colour unchanged, what would you suggest me to do to improve the situation. for example anything to do in relation to filtering or any other parameters
+
+## Prompt 5
+ok go ahead with option 4 and then commit and push but please be ready to undo this prompt in case i do not like the final result
