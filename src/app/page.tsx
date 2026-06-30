@@ -11,8 +11,6 @@ import { SacredJourneysBanner } from "@/components/SacredJourneysBanner";
 import { RetreatFeatureCard } from "@/components/RetreatFeatureCard";
 
 export default function Home() {
-  const featuredTestimonials = testimonials.slice(0, 3);
-
   return (
     <>
       {/* Hero Section */}
@@ -271,14 +269,7 @@ export default function Home() {
               </h2>
             </div>
           </FadeIn>
-          <TestimonialCarousel testimonials={featuredTestimonials} />
-          <FadeIn>
-            <div className="text-center mt-10">
-              <Link href="/testimonials" className="btn-secondary">
-                Read All Testimonials
-              </Link>
-            </div>
-          </FadeIn>
+          <TestimonialCarousel testimonials={testimonials} />
         </div>
       </section>
 
