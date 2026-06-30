@@ -138,7 +138,7 @@ export default function Home() {
                   src="https://static.wixstatic.com/media/c1e158_84a6d3440fbc4b858e6136a4de75515e~mv2.jpg"
                   alt="Masami Noro"
                   fill
-                  className="object-cover"
+            className="object-cover object-[center_20%]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
