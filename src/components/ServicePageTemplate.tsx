@@ -38,13 +38,11 @@ export function ServicePageTemplate({
   bookingUrl,
   afterBenefits,
 }: ServicePageProps) {
-  const relatedTestimonials = testimonials
-    .filter((t) =>
-      name.toLowerCase().includes("energy")
-        ? t.category.includes("energy-healing")
-        : t.category.includes("craniosacral")
-    )
-    .slice(0, 2);
+  const relatedTestimonials = testimonials.filter((t) =>
+    name.toLowerCase().includes("energy")
+      ? t.category.includes("energy-healing")
+      : t.category.includes("craniosacral")
+  );
 
   return (
     <>
