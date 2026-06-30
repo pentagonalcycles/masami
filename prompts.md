@@ -20,3 +20,48 @@ i looked at the result and it is certainly a major improvement. there is an aspe
 
 ## Prompt 7
 yes i find your suggestion very good to remove rather than reduce or tighten
+
+## Prompt 8
+have you already commited and pushed to vercel
+
+## Prompt 9
+perfect, it now starting to look really great. there is one issue that i have observed in the home page, when the following text appears: Experience Transformative Retreats, there is an image behind that text which is fine, but then on either sides of that image, just totally black areas appear. can you check and do you understand why
+
+## Prompt 10
+please go ahead with the fix
+
+## Prompt 11
+perfect, that problem was solved. i now have some more changes. i have prepared a pdf document which i have saved in /home/marco/Downloads/LR Changes 3.pdf are you able to read the content of that pdf
+
+## Prompt 12
+actually, point B and D and L have now been done already, so they should be ignored. in relation to F, i will supply the new testimonial file shortly. could you go ahead to produce a plan to implement those changes. before you do that, however, could you please update all relevant documentation in relation to all or to the most important changes that we have made so for
+
+## Prompt 13
+you will find the testimonials in a pdf called /home/marco/Downloads/Full testimonials.pdf
+
+## Prompt 14
+however when you do implementation, please implement only one change at the time and then commit and push that one only onto vercel and then allow me to check the results and wait for my confirmation before you move on to the next change in the list
+
+## Prompt 15
+yes
+
+## Prompt 16
+yes it is good please go ahead with next one
+
+## Prompt 17
+this one seems to be a problem. the first testimonial for example by Zeenat it appears that only the first paragraph is reported by the second and third and fourth paragraphs are not reported. can you please investigate and explain why
+
+## Prompt 18
+this one it seems to be a problem, but i will revert back to it at a later stage. please continue with the next change
+
+## Prompt 19
+yes this has been carried out correctly, please move to next change
+
+## Prompt 20
+good, i have checked and this change has also been done correctly. please go ahead to next change
+
+## Prompt 21
+yes also this is good, please go ahead with next change
+
+## Prompt 22
+thank you. could you please update any documentation wherever relevant

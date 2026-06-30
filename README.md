@@ -60,7 +60,6 @@ src/
       emergency/page.tsx
     privacy-policy/page.tsx
     terms/page.tsx
-    refund-policy/page.tsx
     cancellation-policy/page.tsx
     api/
       contact/route.ts       # Contact form email API (Resend)

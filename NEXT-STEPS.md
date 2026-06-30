@@ -43,10 +43,9 @@ Tasks that still need to be completed before and after launch.
 - Delete the Wix CDN references once local images are in place
 - **Done:** Retreat images (Mary Magdalene flyer + Masami walking photo) already added to `public/images/retreats/`
 
-### 7. Wire Gift Card Purchase
-- Currently a static page with placeholder buttons
-- Options: integrate Stripe payment links, or keep as a "Contact to Purchase" flow
-- If using Stripe, create payment links for each denomination and update the buttons
+### 7. Wire Gift Card Purchase ✅
+- Footer eGift Card link now points to `book.luminousrebirth.com/gift-card`
+- Gift card purchase handled through Wix booking site
 
 ### 8. Update Mother & Baby Clinic Dates
 - Currently no dynamic dates shown (the original site had hardcoded dates)
