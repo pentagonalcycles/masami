@@ -57,8 +57,16 @@ Referenced from `globals.css`:
 - Gold accent: `#C9A96E`
 - Cream background: `#FAF6F0`
 - Charcoal (burgundy): `#890048` — deep burgundy/maroon, used for hero sections, footer, trust bar, and headings
+- Charcoal light: `#A00055`
 - Heading font: `font-heading` (Cormorant Garamond)
 - Body font: `font-body` (DM Sans)
+
+## Image Overlay Convention
+
+For sections with images behind text (heroes, banners, service cards):
+- Use **neutral dark overlays** (`from-black/60 via-black/30 to-transparent`) rather than brand-colored overlays — this preserves natural image colors
+- Use `bg-charcoal` as the background behind `object-contain` images so empty sides show the brand color
+- Do NOT add CSS `brightness-*` filters to images — the original photos are well-exposed
 
 ## Commands
 
