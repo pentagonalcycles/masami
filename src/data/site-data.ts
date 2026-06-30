@@ -148,7 +148,7 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "Each session has been unique. Every time, there is depth -- something moves. What makes her work exceptional is the way she weaves these two modalities together. She goes to the core, identifies what is ready to release, and supports real change.",
+      "Masami is my dear friend of many years, and she carries years of self-healing experience. This is clearly reflected in her energy healing and craniosacral therapy sessions. I have had the opportunity to work with her both in person and remotely, and each session has been unique. Every time, there is depth — something moves. What makes her work exceptional is the way she weaves these two modalities together. I have experienced the power and seamlessness of this integration, as she goes to the core, identifies what is ready to release, and supports real change.",
     name: "Zeenat",
     title: "Spiritual Artist & Energy Healer",
     location: "Portugal",
@@ -157,7 +157,7 @@ export const testimonials = [
   {
     id: 2,
     quote:
-      "Masami's work is more than just a therapy, it's a gift. After just 20 minutes, the pain eased by around 80% and the swelling in my face visibly reduced. By the next morning, the pain had completely gone.",
+      "I first met Masami at one of the most painful moments of my life. I had been suffering for days with a severe tooth abscess, the pain was unbearable, and my face was swollen. After just 20 minutes with Masami, the pain eased by around 80% and the swelling in my face visibly reduced. By the next morning, the pain had completely gone. Masami's work is more than just a therapy, it's a gift.",
     name: "Johannes",
     title: "",
     location: "London",
@@ -166,7 +166,7 @@ export const testimonials = [
   {
     id: 3,
     quote:
-      "I could at several points during the session physically even feel the energy shifting and unblocking. I felt much better and lighter after every session and will continue to do these with Masami.",
+      "The remote healing sessions I did with Masami were very very effective in freeing up blocked energy and facilitating the energy flow back to what it should be. I could at several points during the session physically even feel the energy shifting and unblocking. I felt much better and lighter after every session and will continue to do these with Masami.",
     name: "Fazila",
     title: "",
     location: "Mumbai",
@@ -175,7 +175,7 @@ export const testimonials = [
   {
     id: 4,
     quote:
-      "She gets direct to the source of whatever needs rebalancing and realigning. She accesses cosmic frequencies and anchors them here into the physical through touch and word, setting you on your centred path with empowered clarity.",
+      "Masami conducts her work with pinpoint precision and highly skilled accuracy. She gets direct to the source of whatever needs rebalancing and realigning to allow you to step into a more liberated and true existence. She accesses cosmic frequencies and anchors them here into the physical through touch and word, setting you on your centred path with empowered clarity.",
     name: "Tiamat",
     title: "",
     location: "Ibiza",
@@ -184,7 +184,7 @@ export const testimonials = [
   {
     id: 5,
     quote:
-      "Her presence, intuition, and deep energetic connection make her work truly one of a kind. Every healing session with Masami feels like a gift. She is a powerful, wise soul whose support is both transformative and deeply nourishing.",
+      "I began working with Masami in 2018, first through in-person healing sessions and later through distant healing as I moved. Every healing session with Masami feels like a gift. Sometimes, she has helped me work through specific physical or emotional challenges; other times, her healing has brought a profound sense of balance and harmony. Her presence, intuition, and deep energetic connection make her work truly one of a kind.",
     name: "Virginie",
     title: "Yoga Teacher",
     location: "Belgium",
@@ -193,7 +193,7 @@ export const testimonials = [
   {
     id: 6,
     quote:
-      "Son energie est pure, douce et bienveillante. Des soins energetiques puissants qui vous guident et vous transportent.",
+      "Son énergie est pure, douce et bienveillante. Des soins énergétiques puissants qui vous guident et vous transportent. Capable de vous transcender et de vous réaligner en une seule séance.",
     name: "Caroline",
     title: "",
     location: "France",
@@ -202,7 +202,7 @@ export const testimonials = [
   {
     id: 7,
     quote:
-      "I have rarely worked with someone so talented and I have seen many practitioners. She is very intuitive and is able to adapt to many systems to help them to relax and release in resolved tension.",
+      "Masami is truly a talented individual. She is very intuitive and is able to adapt to many systems to help them to relax and release in resolved tension. She also combines spiritual insights so takes a multi dimensional approach. I have rarely worked with someone so talented and I have seen many practitioners.",
     name: "Aya",
     title: "Psychologist",
     location: "Glastonbury",
@@ -211,19 +211,11 @@ export const testimonials = [
   {
     id: 8,
     quote:
-      "My session with Masami was truly transformative. Her unique combination of deep intuition and gentle guidance created a safe and nurturing space, allowing me to explore and release long-held blockages.",
+      "My session with Masami was truly transformative. Her unique combination of deep intuition and gentle guidance created a safe and nurturing space, allowing me to explore and release long-held blockages that I didn't even realize I was carrying. Her work goes beyond mere healing; it's a catalyst, igniting a powerful journey of self-discovery and empowerment within me.",
     name: "Sunil",
     title: "Energetic Art Master",
     location: "Portugal",
     category: ["energy-healing"],
-  },
-  {
-    id: 9,
-    quote: "Amazing healing session with Masami. Highly recommended.",
-    name: "Marco",
-    title: "",
-    location: "London",
-    category: ["craniosacral", "energy-healing"],
   },
 ];
 
