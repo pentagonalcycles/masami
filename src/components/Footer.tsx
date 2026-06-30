@@ -159,12 +159,6 @@ export function Footer() {
               Terms & Conditions
             </Link>
             <Link
-              href="/refund-policy"
-              className="hover:text-gold transition-colors"
-            >
-              Refund Policy
-            </Link>
-            <Link
               href="/cancellation-policy"
               className="hover:text-gold transition-colors"
             >
