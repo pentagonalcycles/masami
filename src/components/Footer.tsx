@@ -95,12 +95,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/gift-card"
+                <a
+                  href="https://book.luminousrebirth.com/gift-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-gold transition-colors"
                 >
                   eGift Card
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
