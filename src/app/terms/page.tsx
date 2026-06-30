@@ -31,10 +31,16 @@ export default function TermsPage() {
             </p>
 
             <h2 className="heading-sm text-charcoal">3. Cancellation Policy</h2>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>48+ hours notice: Full refund or reschedule</li>
-              <li>24-48 hours notice: Reschedule only</li>
-              <li>Less than 24 hours: No refund (except emergencies)</li>
+            <ul className="list-disc pl-6 space-y-4">
+              <li>
+                <strong>More than 24 hours notice:</strong> Reschedule only and not refunded
+              </li>
+              <li>
+                <strong>Less than 24 hours notice and missed appointments</strong> are charged in full
+              </li>
+              <li>
+                <strong>Late arrival:</strong> To protect the flow of my practice, if you arrive up to 15 minutes late, we will use the remaining time for your session. Arrivals more than 15 minutes past the start time will be deemed a no-show.
+              </li>
             </ul>
 
             <h2 className="heading-sm text-charcoal">4. Health Disclaimer</h2>
