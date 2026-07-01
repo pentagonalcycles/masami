@@ -70,7 +70,7 @@ src/
     FadeIn.tsx              # Scroll-triggered animation wrapper
     ServiceCard.tsx         # Service card component
     ServicePageTemplate.tsx # Shared template for service detail pages
-    TestimonialCard.tsx     # Individual testimonial card
+    TestimonialCard.tsx     # Individual testimonial card (supports paragraph breaks via \n\n)
     TestimonialCarousel.tsx # Manual carousel with arrow navigation (1 card at a time)
     NewsletterSignup.tsx    # Email capture form
     ContactForm.tsx         # Contact form component

@@ -21,10 +21,9 @@ Tasks that still need to be completed before and after launch.
 - Create the API route at `src/app/api/newsletter/route.ts`
 - Add environment variables for the API key
 
-### 4. Replace Email Addresses
-- Search for placeholder emails across the codebase and replace with actual addresses:
-  - `hello@luminousrebirth.com` -- update in `ContactForm.tsx`, `Footer.tsx`, privacy/terms/refund pages
-  - `babyclinicsomerset@gmail.com` -- already correct from original site
+### 4. Replace Email Addresses ✅
+- Email addresses across the codebase have been verified and updated
+- `masami@luminousrebirth.com` is used consistently
 
 ### 5. Verify Domain and DNS ✅
 - `www.luminousrebirth.com` points to Vercel via CNAME → `cname.vercel-dns.com`

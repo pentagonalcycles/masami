@@ -65,3 +65,21 @@ yes also this is good, please go ahead with next change
 
 ## Prompt 22
 thank you. could you please update any documentation wherever relevant
+
+## Prompt 23
+let us work on testimonials further, as there seems to be some issues. first i would like to focus for example on the first testimonial by Zeenat. this has 4 paragraphs in the pdf file that i have supplied, but only the first two paragraphs are showing in the testimonials?
+
+## Prompt 24
+yes please go ahead
+
+## Prompt 25
+very good. one question though, i think that testimonials also appear in other parts of the website, rather than the home page only. is this correct?
+
+## Prompt 26
+in the Service pages, the carousel seems to have only a few testimonials but not all?
+
+## Prompt 27
+yes go ahead with the fix
+
+## Prompt 28
+thank you. any documentation relevant to be updated before i leave the session?
