@@ -31,6 +31,14 @@ Tasks that still need to be completed before and after launch.
 - `book.luminousrebirth.com` points to Wix via CNAME → `cdn1.wixdns.net`
 - See [DEPLOYMENT.md](./DEPLOYMENT.md) for DNS configuration
 
+### 6. Update Business Address ✅
+- Updated Glastonbury address to: Sweet Track Fitness, above Studio 3, Unit 1 Beckery Road, Glastonbury, BA6 9QT
+- Updated in `src/app/services/craniosacral-glastonbury/page.tsx`
+- Updated in `src/app/services/mother-baby/page.tsx`
+- Updated in `src/app/contact/page.tsx` with full address
+- Changes committed and pushed to GitHub
+- Vercel auto-deployed the updates
+
 ## Important (Do Soon After Launch)
 
 ### 6. Replace Remaining Images with High-Resolution Originals
@@ -58,7 +66,14 @@ Tasks that still need to be completed before and after launch.
 
 ## Enhancements (Nice to Have)
 
-### 10. Integrate Analytics
+### 10. SSH & Automated Deployment ✅
+- SSH keys configured for passwordless GitHub access
+- Git remote changed from HTTPS to SSH
+- SSH configured to use port 443 (port 22 blocked on network)
+- Created `push.sh` script for automated deployments
+- See [MIGRATION.md](./MIGRATION.md) for SSH configuration details
+
+### 11. Integrate Analytics
 - Add Vercel Analytics (built-in, free): `npm install @vercel/analytics`
 - Optionally add Google Analytics 4 via environment variable
 

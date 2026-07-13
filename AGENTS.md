@@ -10,6 +10,44 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 Instructions for AI coding agents working on this project.
 
+## Project Context (Migration Status)
+
+This project was originally developed on a **Linux Ubuntu desktop** by Marco (the original developer) and was migrated to a **macOS MacBook Air** controlled by Masami (the project owner) in **July 2026**.
+
+| Detail | Value |
+|---|---|
+| **Current platform** | macOS (Apple Silicon) |
+| **Project path** | `/Users/masami/Desktop/Ai projects/Websites/masami` |
+| **Node.js** | v26.5.0 (managed via nvm) |
+| **Git repo** | `pentagonalcycles/masami` on GitHub |
+| **Git remote** | `git@github.com:pentagonalcycles/masami.git` (SSH, passwordless) |
+| **Deployment** | Vercel — auto-deploys on push to `main` |
+| **Vercel dashboard** | `https://vercel.com/pentagonalcycles-projects/masami` |
+| **Vercel owner** | Marco (pentagonalcycles) |
+| **Live site** | `luminousrebirth.com` |
+
+### Who does what
+
+- **Masami** — project owner, pushes code to GitHub from macOS
+- **Marco** — original developer, owns the Vercel account, manages DNS and Vercel settings
+
+### Deployment workflow
+
+1. Masami makes changes locally
+2. AI agent runs `npm run lint && npm run build` to verify
+3. AI agent commits changes with descriptive message
+4. AI agent pushes to `main` branch via SSH (no password required)
+5. Vercel auto-deploys the changes to production (~60 seconds)
+6. For Vercel settings (env vars, domains), contact Marco
+
+### Important notes for AI agents
+
+- When running npm commands, source nvm first: `export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"`
+- Always run `npm run lint && npm run build` after making changes
+- Do not commit `MIGRATION.md` — it is a local-only reference file
+- SSH is configured for passwordless GitHub access — use `git push origin main` directly
+- SSH agent must be running for git push — use `eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519` if needed
+
 ## Tech Stack
 
 - **Next.js 16** with App Router (NOT Pages Router)

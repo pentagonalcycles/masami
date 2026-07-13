@@ -31,13 +31,13 @@ perfect, it now starting to look really great. there is one issue that i have ob
 please go ahead with the fix
 
 ## Prompt 11
-perfect, that problem was solved. i now have some more changes. i have prepared a pdf document which i have saved in /home/marco/Downloads/LR Changes 3.pdf are you able to read the content of that pdf
+perfect, that problem was solved. i now have some more changes. i have prepared a pdf document which i have saved in my Downloads folder as LR Changes 3.pdf are you able to read the content of that pdf
 
 ## Prompt 12
 actually, point B and D and L have now been done already, so they should be ignored. in relation to F, i will supply the new testimonial file shortly. could you go ahead to produce a plan to implement those changes. before you do that, however, could you please update all relevant documentation in relation to all or to the most important changes that we have made so for
 
 ## Prompt 13
-you will find the testimonials in a pdf called /home/marco/Downloads/Full testimonials.pdf
+you will find the testimonials in a pdf called Full testimonials.pdf in my Downloads folder
 
 ## Prompt 14
 however when you do implementation, please implement only one change at the time and then commit and push that one only onto vercel and then allow me to check the results and wait for my confirmation before you move on to the next change in the list

@@ -10,13 +10,20 @@ Step-by-step instructions to deploy Luminous Rebirth to Vercel.
 
 ## Step 1: Push to GitHub
 
+SSH is configured for passwordless access. To push changes:
+
 ```bash
-# Create a new private repo on GitHub, then:
-cd /home/marco/Desktop/projects/websites/masami/luminous-rebirth
-git remote add origin git@github.com:YOUR_USERNAME/luminous-rebirth.git
-git branch -M main
-git push -u origin main
+cd "/Users/masami/Desktop/Ai projects/Websites/masami"
+git push origin main
 ```
+
+Or use the automated script:
+
+```bash
+./push.sh
+```
+
+**Note:** SSH keys are stored in `~/.ssh/` and configured to use port 443 (port 22 blocked on network).
 
 ## Step 2: Connect to Vercel
 
@@ -90,6 +97,20 @@ After DNS propagates:
 ## Automatic Deployments
 
 Once connected, every push to `main` will automatically deploy to production. Pull requests will generate preview deployments with unique URLs.
+
+### Automated Push Script
+
+Use `push.sh` for one-command deployments:
+
+```bash
+./push.sh
+```
+
+The script:
+1. Sources nvm for Node.js
+2. Starts SSH agent and loads the key
+3. Pushes to GitHub via SSH (no password required)
+4. Vercel auto-deploys within ~60 seconds
 
 ## Rollback
 

@@ -33,6 +33,14 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# local reference files
+MIGRATION.md
+mycolleague.md
+
+# SSH keys (never commit these)
+id_ed25519
+id_ed25519.pub
+
 # vercel
 .vercel
 
