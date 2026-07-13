@@ -18,7 +18,7 @@ export default function MotherBabyPage() {
         <div className="mt-8 p-6 bg-cream rounded-xl">
           <h4 className="font-heading text-lg text-charcoal mb-2">Location</h4>
           <p className="text-text mb-3">
-            Fairfield Gardens BA6 9NH a 5 minutes walk from Glastonbury Center
+            Sweet Track Fitness, above Studio 3, Unit 1 Beckery Road, Glastonbury, BA6 9QT
           </p>
           <p className="text-text-light text-sm">
             Member of the Craniosacral Therapy Association UK and fully insured

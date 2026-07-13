@@ -54,7 +54,10 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium text-charcoal">Location</p>
                         <p className="text-text-light text-sm">
-                          Glastonbury, Somerset, UK
+                          Sweet Track Fitness, above Studio 3
+                        </p>
+                        <p className="text-text-light text-sm">
+                          Unit 1 Beckery Road, Glastonbury, BA6 9QT
                         </p>
                         <p className="text-text-light text-sm">
                           London, UK (select dates)
