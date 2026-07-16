@@ -212,6 +212,17 @@ Here is a full example you can copy and adapt:
 
 ---
 
+## Hidden Retreat Pages
+
+Some retreats have hidden day-by-day itinerary pages that are accessible via direct URL only (no links from other pages).
+
+**Current hidden pages:**
+- Walking the Path of Mary Magdalene: `/retreats/walking-the-path-of-mary-magdalene`
+
+These pages are created as separate files in `src/app/retreats/[retreat-slug]/page.tsx`.
+
+---
+
 ## Need Help?
 
 If you get stuck, share:

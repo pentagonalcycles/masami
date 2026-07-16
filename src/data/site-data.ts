@@ -9,19 +9,22 @@ export const services = [
     price: "£70",
     priceAmount: 70,
     description:
-      "A gentle, hands-on therapy that supports your body's natural healing processes. Through light touch, I work with the craniosacral system to release restrictions and promote deep relaxation, helping to alleviate pain, stress, and dysfunction.",
+      "Discover the gentle yet profound potential of Craniosacral Therapy—a deeply restorative treatment that supports your body's natural capacity to find balance, release tension and restore wellbeing.\n\nThis integrative bodywork uses subtle, listening touch to tap into the natural rhythms of your body, gently dissolving deeply held stress, chronic pain, and physical tension. At the heart of this practice is your craniosacral system—the vital network that houses, protects, and nourishes your central nervous system. By tuning into these delicate internal fluid rhythms. This whole person approach listens to the body as an interconnected system and not solely focus on individual symptoms.\n\nGentle, non-invasive and deeply nurturing, this therapy is suitable for people at all stages of life, from babies and children to adults.",
     whatToExpect: [
-      "A calm, safe environment for deep relaxation",
-      "Gentle touch on the head, spine, and sacrum",
-      "A deeply restorative experience lasting 60 minutes",
-      "You remain fully clothed throughout the session",
+      "Each appointment lasts approximately 60 minutes",
+      "Around 45 minutes of hands-on treatment",
+      "Up to 15 minutes to discuss your concerns",
+      "You remain fully clothed throughout",
+      "Lie comfortably on a massage table",
+      "Gentle, subtle hand contact — no forceful manipulation",
     ],
     benefits: [
-      "Relief from chronic pain and tension",
-      "Reduced stress and anxiety",
-      "Improved sleep quality",
-      "Enhanced overall wellbeing",
-      "Support for trauma release",
+      "Chronic Pain & Illness: Managing ongoing pain, chronic fatigue",
+      "Stress & Trauma: Calming anxiety, chronic stress, overwhelm, shock",
+      "Head, Neck & Jaw Tension: Relieving migraines, headaches, TMJ, jaw tension, and teeth grinding",
+      "Recovery & Vitality: Accelerating injury recovery and building core energy and vitality",
+      "Pregnancy and postnatal wellbeing, including support following difficult or traumatic birth experiences",
+      "Life Transitions: Supporting you through grief, loss, major life changes, and emotional upheaval",
     ],
     image:
       "https://static.wixstatic.com/media/c1e158_ca9f5a826f3a4823a9b45efd74c27dd0~mv2.jpg",
@@ -38,19 +41,22 @@ export const services = [
     price: "£100",
     priceAmount: 100,
     description:
-      "The same transformative craniosacral therapy, available in Kensington, London. This session works with the subtle rhythms of your body to release deep-held tension and promote natural healing.",
+      "Discover the gentle yet profound potential of Craniosacral Therapy—a deeply restorative treatment that supports your body's natural capacity to find balance, release tension and restore wellbeing.\n\nThis integrative bodywork uses subtle, listening touch to tap into the natural rhythms of your body, gently dissolving deeply held stress, chronic pain, and physical tension. At the heart of this practice is your craniosacral system—the vital network that houses, protects, and nourishes your central nervous system. By tuning into these delicate internal fluid rhythms. This whole person approach listens to the body as an interconnected system and not solely focus on individual symptoms.\n\nGentle, non-invasive and deeply nurturing, this therapy is suitable for people at all stages of life, from babies and children to adults.",
     whatToExpect: [
-      "A professional, calming Kensington clinic environment",
-      "Gentle, precise touch therapy",
-      "A 60-minute deeply restorative session",
+      "Each appointment lasts approximately 60 minutes",
+      "Around 45 minutes of hands-on treatment",
+      "Up to 15 minutes to discuss your concerns",
       "You remain fully clothed throughout",
+      "Lie comfortably on a massage table",
+      "Gentle, subtle hand contact — no forceful manipulation",
     ],
     benefits: [
-      "Relief from chronic pain and tension",
-      "Reduced stress and anxiety",
-      "Improved sleep quality",
-      "Enhanced overall wellbeing",
-      "Support for trauma release",
+      "Chronic Pain & Illness: Managing ongoing pain, chronic fatigue",
+      "Stress & Trauma: Calming anxiety, chronic stress, overwhelm, shock",
+      "Head, Neck & Jaw Tension: Relieving migraines, headaches, TMJ, jaw tension, and teeth grinding",
+      "Recovery & Vitality: Accelerating injury recovery and building core energy and vitality",
+      "Pregnancy and postnatal wellbeing, including support following difficult or traumatic birth experiences",
+      "Life Transitions: Supporting you through grief, loss, major life changes, and emotional upheaval",
     ],
     image:
       "https://static.wixstatic.com/media/c1e158_f6601ebca67d4f4687bd6809a1f4382f~mv2.jpg",
@@ -67,18 +73,18 @@ export const services = [
     price: "£70",
     priceAmount: 70,
     description:
-      "Specialist craniosacral therapy designed for mothers and babies. This gentle approach supports post-natal recovery for mothers and helps babies with issues such as colic, feeding difficulties, and birth trauma.",
+      "For pregnant mothers — CST offers a safe and deeply relaxing treatment to have throughout your pregnancy. The benefits of the treatments can be experienced at different levels:\n\n• Alleviate physical pain and symptoms including spinal and pelvis pain, rib/back pain, headaches, indigestion.\n• Help to settle the nervous system and hormonal balance reducing stress and anxiety.\n• Promote profound relaxation creating a field where mummy and baby can feel a deep sense of connection and bonding.\n\nFor mothers and babies — CST offers gentle hands-on treatment that relieves stress in your baby's head, neck, and spine. It helps babies settle, feed, and sleep better. Because both bodies are connected, we often treat mothers and babies together.\n\nBenefits for Baby:\n• Colic and Reflux: Eases tummy tension.\n• Birth Strain: Releases muscle tightness from difficult or fast births.\n• Feeding: Helps the jaw relax for better latching.\n• Sleep: Calms the nervous system so they rest easier.\n\nBenefits for Mother:\n• Nervous System: Relaxes the body and lowers stress hormones.\n• Recovery: Eases pelvic and back pain from pregnancy and delivery.\n• Bonding: Calming both of you together builds a stronger connection.\n\nI provide home visits for mother and baby treatments within a 15 mile radius of Glastonbury.\nPlease contact me directly at masami@luminousrebirth.com or 07496 959998 for more detail.",
     whatToExpect: [
-      "A nurturing environment for both mother and baby",
-      "Gentle, safe touch suitable for newborns",
+      "Gentle, safe touch suitable for all stages",
+      "You remain fully clothed throughout",
       "Flexible session structure to accommodate baby's needs",
-      "Support for the mother-baby bond",
+      "Home visits available within 15 miles of Glastonbury",
     ],
     benefits: [
-      "Support for post-natal recovery",
-      "Relief for baby's colic and digestive issues",
-      "Help with breastfeeding difficulties",
-      "Calming for unsettled babies",
+      "Alleviate physical pain and symptoms",
+      "Settle the nervous system and hormonal balance",
+      "Promote profound relaxation and bonding",
+      "Help babies settle, feed, and sleep better",
       "Support for birth trauma recovery",
     ],
     image:
@@ -125,7 +131,7 @@ export const services = [
     price: "£40",
     priceAmount: 40,
     description:
-      "A short, focused energy healing session for sudden emergencies or intense situations. This 30-minute remote session helps break up and resolve acute energetic disturbances, bringing calm and clarity when you need it most.",
+      "You can contact me directly via WhatsApp or email and I will follow up with you as soon as possible to agree on timing.",
     whatToExpect: [
       "Rapid response for urgent situations",
       "30-minute focused remote session",
@@ -140,7 +146,6 @@ export const services = [
     image:
       "https://static.wixstatic.com/media/97e6aa_993631817cfa4fc5b844330875f6a69c~mv2.jpg",
     bookingType: "request",
-    bookingUrl: "https://book.luminousrebirth.com/booking-calendar/emergency-assistance-remote-1",
   },
 ];
 

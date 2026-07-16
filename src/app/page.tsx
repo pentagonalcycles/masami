@@ -195,28 +195,14 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-text mb-4">
-                In collaboration with the Sacred Birth Center in Glastonbury,
-                specialist treatments for mothers and babies are offered every
-                other Tuesday from 12:30 to 3:30 PM.
+                We are quietly working behind the scenes on a new set-up for our
+                low-cost clinic. This updated space will allow us to better
+                support our community while keeping our care accessible to
+                everyone who needs it.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div className="bg-cream rounded-xl p-4">
-                  <p className="text-sm text-text-light">Exchange</p>
-                  <p className="text-gold font-semibold">£25 / 45 min</p>
-                </div>
-                <div className="bg-cream rounded-xl p-4">
-                  <p className="text-sm text-text-light">Booking</p>
-                  <p className="text-charcoal font-medium text-sm">
-                    masami@luminousrebirth.com
-                  </p>
-                </div>
-                <div className="bg-cream rounded-xl p-4">
-                  <p className="text-sm text-text-light">Note</p>
-                  <p className="text-charcoal text-sm">
-                    Drop-ins welcome, booking recommended
-                  </p>
-                </div>
-              </div>
+              <p className="text-text font-medium">
+                Watch this space for updates
+              </p>
             </div>
           </FadeIn>
         </div>

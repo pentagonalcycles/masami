@@ -51,6 +51,7 @@ src/
     journal/[slug]/page.tsx # Individual blog posts
     gift-card/page.tsx  # eGift card
     retreats/page.tsx   # Sacred Journeys & Retreats
+    retreats/walking-the-path-of-mary-magdalene/page.tsx # Hidden day-by-day itinerary (URL only)
     services/
       page.tsx                          # Services index
       craniosacral-glastonbury/page.tsx  # Individual service

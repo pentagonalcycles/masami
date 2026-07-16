@@ -54,10 +54,10 @@ Tasks that still need to be completed before and after launch.
 - Footer eGift Card link now points to `book.luminousrebirth.com/gift-card`
 - Gift card purchase handled through Wix booking site
 
-### 8. Update Mother & Baby Clinic Dates
-- Currently no dynamic dates shown (the original site had hardcoded dates)
-- Either: add dates to `src/data/site-data.ts` as a structured field
-- Or: move dates to a CMS if Masami needs to update them herself
+### 8. Update Mother & Baby Clinic Section ✅
+- Mother & Baby service text updated with detailed pregnancy and baby CST information
+- Home page collaboration section updated with "coming soon" message for new low-cost clinic
+- Clinic details to be added when new set-up is ready
 
 ### 9. Add Real Blog Content
 - The journal has 3 placeholder articles
