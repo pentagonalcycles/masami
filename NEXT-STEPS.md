@@ -54,9 +54,9 @@ Tasks that still need to be completed before and after launch.
 - Footer eGift Card link now points to `book.luminousrebirth.com/gift-card`
 - Gift card purchase handled through Wix booking site
 
-### 8. Update Mother & Baby Clinic Section ✅
-- Mother & Baby service text updated with detailed pregnancy and baby CST information
-- Home page collaboration section updated with "coming soon" message for new low-cost clinic
+### 8. Update Mother & Baby Clinic Section
+- Home page collaboration section updated with "coming soon" message for new low-cost clinic ✅
+- Mother & Baby service text — **needs review** (see `CHANGE-I-REVIEW.md`)
 - Clinic details to be added when new set-up is ready
 
 ### 9. Add Real Blog Content
