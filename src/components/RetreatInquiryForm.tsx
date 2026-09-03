@@ -50,6 +50,26 @@ export function RetreatInquiryForm() {
     );
   }
 
+  if (status === "error") {
+    return (
+      <div className="bg-cream rounded-2xl p-8 md:p-12 shadow-sm text-center">
+        <div className="text-red-500 text-5xl mb-4">&#10007;</div>
+        <h3 className="font-heading text-2xl text-charcoal mb-2">
+          Something Went Wrong
+        </h3>
+        <p className="text-text-light mb-6">
+          We couldn&apos;t register your interest. Please try again later or email us directly.
+        </p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="btn-secondary"
+        >
+          Try Again
+        </button>
+      </div>
+    );
+  }
+
   return (
     <form onSubmit={handleSubmit} className="bg-cream rounded-2xl p-6 md:p-10 shadow-sm space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
