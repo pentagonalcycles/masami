@@ -73,13 +73,11 @@ Vercel automatically provisions an SSL certificate once DNS is verified. No manu
 In the Vercel dashboard, go to **Settings > Environment Variables** and add:
 
 ```env
-# Add these as you wire up the integrations
-RESEND_API_KEY=
-MAILCHIMP_API_KEY=
-MAILCHIMP_LIST_ID=
-MAILCHIMP_SERVER=
-NEXT_PUBLIC_GA_ID=
+# Email service (Resend) - used by contact, newsletter, and retreat inquiry forms
+RESEND_API_KEY=re_...
 ```
+
+**Important:** The Resend sending domain (`luminousrebirth.com`) must be verified with DNS records (DKIM, SPF) before emails will be delivered. See the Resend dashboard for required DNS configuration.
 
 After adding variables, redeploy for them to take effect.
 
@@ -89,7 +87,7 @@ After DNS propagates:
 
 1. Visit `https://www.luminousrebirth.com`
 2. Check all pages load correctly
-3. Test the contact form (will be simulated until API route is added)
+3. Test the contact form, newsletter signup, and retreat inquiry form
 4. Verify images load from Wix CDN
 5. Check mobile responsiveness
 6. Run a Lighthouse audit
@@ -131,3 +129,11 @@ If something breaks after a deploy:
 - [ ] Update any external links pointing to the old Wix site
 - [ ] Confirm all email addresses are updated
 - [ ] Run a final test of all pages, forms, and links
+
+## Resend Email Setup Checklist
+
+- [x] Add `RESEND_API_KEY` to Vercel environment variables
+- [ ] Add `luminousrebirth.com` domain in Resend dashboard
+- [ ] Add DNS records (DKIM, SPF) at Namecheap
+- [ ] Verify domain shows as "Verified" in Resend
+- [ ] Test all three forms (contact, newsletter, retreat inquiry)

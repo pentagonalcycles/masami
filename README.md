@@ -64,6 +64,7 @@ src/
     cancellation-policy/page.tsx
     api/
       contact/route.ts       # Contact form email API (Resend)
+      newsletter/route.ts    # Newsletter subscription email API (Resend)
       retreat-inquiry/route.ts # Retreat inquiry email API (Resend)
   components/
     Header.tsx              # Sticky nav with scroll-aware light/dark mode

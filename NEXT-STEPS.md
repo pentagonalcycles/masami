@@ -15,11 +15,11 @@ Tasks that still need to be completed before and after launch.
 - Update `src/components/ContactForm.tsx` to POST to the API route
 - Add environment variables for the API key
 
-### 3. Wire Newsletter Signup
-- Choose an email marketing platform: Mailchimp, ConvertKit, Buttondown, or similar
-- Update `src/components/NewsletterSignup.tsx` to POST to an API route
-- Create the API route at `src/app/api/newsletter/route.ts`
-- Add environment variables for the API key
+### 3. Wire Newsletter Signup ✅
+- Newsletter signup now sends emails via Resend API at `src/app/api/newsletter/route.ts`
+- `NewsletterSignup.tsx` POSTs to `/api/newsletter`
+- Added error feedback UI for failed submissions
+- Uses same Resend API key as contact and retreat inquiry forms
 
 ### 4. Replace Email Addresses ✅
 - Email addresses across the codebase have been verified and updated
@@ -106,22 +106,11 @@ Tasks that still need to be completed before and after launch.
 
 ## Environment Variables Needed
 
-Create a `.env.local` file with:
+The following are configured in the Vercel dashboard under Settings > Environment Variables:
 
 ```env
-# Email service (e.g., Resend)
-RESEND_API_KEY=your_key_here
-
-# Newsletter service (e.g., Mailchimp)
-MAILCHIMP_API_KEY=your_key_here
-MAILCHIMP_LIST_ID=your_list_id
-MAILCHIMP_SERVER=us1
-
-# Analytics (optional)
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-
-# Google Maps (optional)
-NEXT_PUBLIC_GOOGLE_MAPS_KEY=your_key_here
+# Email service (Resend) - used by contact, newsletter, and retreat inquiry forms
+RESEND_API_KEY=re_...
 ```
 
-For Vercel deployment, add these in the Vercel dashboard under Settings > Environment Variables.
+**Note:** The Resend domain (`luminousrebirth.com`) must be verified with DNS records before emails will be delivered. See the Resend dashboard for required DNS configuration.
