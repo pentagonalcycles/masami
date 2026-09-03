@@ -11,10 +11,18 @@ export function NewsletterSignup() {
     e.preventDefault();
     if (!email) return;
     setStatus("loading");
-    // Simulate submission -- replace with actual API integration
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setStatus("success");
-    setEmail("");
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!response.ok) throw new Error("Failed to subscribe");
+      setStatus("success");
+      setEmail("");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -29,6 +37,10 @@ export function NewsletterSignup() {
       {status === "success" ? (
         <p className="text-gold font-medium">
           Thank you for subscribing. Welcome to the journey.
+        </p>
+      ) : status === "error" ? (
+        <p className="text-red-400 font-medium">
+          Something went wrong. Please try again later.
         </p>
       ) : (
         <form
