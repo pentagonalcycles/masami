@@ -10,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function EmergencyPage() {
-  return <ServicePageTemplate {...service} bookingType={service.bookingType as "book" | "request"} />;
+  return <ServicePageTemplate {...service} bookingType={service.bookingType as "book" | "request" | "whatsapp"} />;
 }

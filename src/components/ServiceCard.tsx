@@ -9,7 +9,7 @@ interface ServiceCardProps {
   duration: string;
   price?: string;
   image: string;
-  bookingType: "book" | "request";
+  bookingType: "book" | "request" | "whatsapp";
 }
 
 export function ServiceCard({
@@ -56,7 +56,7 @@ export function ServiceCard({
             href={`/services/${slug}`}
             className="text-gold text-sm font-medium hover:text-gold-dark transition-colors"
           >
-            {bookingType === "book" ? "Book Now" : "Request"} &rarr;
+            {bookingType === "request" ? "Request" : "Book Now"} &rarr;
           </Link>
         </div>
       </div>

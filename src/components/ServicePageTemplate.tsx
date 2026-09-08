@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
-import { WixBookingLink } from "@/components/WixBookingsEmbed";
+import { WixBookingLink, WhatsAppLink } from "@/components/WixBookingsEmbed";
 import { testimonials } from "@/data/site-data";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { Clock, MapPin, PoundSterling, Check } from "lucide-react";
+import { Clock, MapPin, PoundSterling, Check, MessageCircle, Phone } from "lucide-react";
 
 interface ServicePageProps {
   slug: string;
@@ -18,7 +18,7 @@ interface ServicePageProps {
   whatToExpect: string[];
   benefits: string[];
   image: string;
-  bookingType: "book" | "request";
+  bookingType: "book" | "request" | "whatsapp";
   bookingUrl?: string;
   afterBenefits?: React.ReactNode;
 }
@@ -147,7 +147,10 @@ export function ServicePageTemplate({
                   </div>
                   {bookingUrl ? (
                     <WixBookingLink bookingUrl={bookingUrl} className="btn-primary w-full text-center block">
-                      {bookingType === "book" ? "Book Now" : "Request Session"}
+                      <span className="flex items-center justify-center gap-2">
+                        <MessageCircle size={18} />
+                        Message on WhatsApp
+                      </span>
                     </WixBookingLink>
                   ) : (
                     <Link href="/contact" className="btn-primary w-full text-center block">
@@ -155,7 +158,10 @@ export function ServicePageTemplate({
                     </Link>
                   )}
                   <p className="text-xs text-text-muted text-center mt-3">
-                    {bookingUrl ? "Opens Wix booking calendar" : "Contact us to book"}
+                    Or call / text{" "}
+                    <a href="tel:+447496959998" className="text-gold hover:underline">
+                      07496 959998
+                    </a>
                   </p>
                   <div className="mt-4 pt-4 border-t border-cream-dark text-center">
                     <Link href="/cancellation-policy" className="text-xs text-text-light hover:text-gold transition-colors">

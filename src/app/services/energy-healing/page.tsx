@@ -13,7 +13,7 @@ export default function EnergyHealingPage() {
   return (
     <ServicePageTemplate
       {...service}
-      bookingType={service.bookingType as "book" | "request"}
+      bookingType={service.bookingType as "book" | "request" | "whatsapp"}
       afterBenefits={
         <p>
           Feel free to contact me directly to book a session if you can&apos;t find any suitable

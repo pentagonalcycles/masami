@@ -13,7 +13,7 @@ export default function MotherBabyPage() {
   return (
     <ServicePageTemplate
       {...service}
-      bookingType={service.bookingType as "book" | "request"}
+      bookingType={service.bookingType as "book" | "request" | "whatsapp"}
       afterBenefits={
         <div className="mt-8 p-6 bg-cream rounded-xl">
           <h4 className="font-heading text-lg text-charcoal mb-2">Location</h4>

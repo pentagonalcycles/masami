@@ -50,3 +50,31 @@ export function WixBookingLink({
     </a>
   );
 }
+
+interface WhatsAppLinkProps {
+  phone: string;
+  message: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function WhatsAppLink({
+  phone,
+  message,
+  children,
+  className,
+}: WhatsAppLinkProps) {
+  const encodedMessage = encodeURIComponent(message);
+  const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className ?? "btn-primary"}
+    >
+      {children}
+    </a>
+  );
+}

@@ -118,7 +118,7 @@ export default function Home() {
                   tagline={service.tagline}
                   duration={service.duration}
                   image={service.image}
-                  bookingType={service.bookingType as "book" | "request"}
+                  bookingType={service.bookingType as "book" | "request" | "whatsapp"}
                 />
               </FadeIn>
             ))}
