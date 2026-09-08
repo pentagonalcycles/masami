@@ -4,10 +4,12 @@ Tasks that still need to be completed before and after launch.
 
 ## Critical (Must Do Before Launch)
 
-### 1. Verify Wix Booking Links (Required for Bookings) ✅
-- The `bookingUrl` values in `src/data/site-data.ts` point to `book.luminousrebirth.com/booking-calendar/...`
-- Booking links have been tested and confirmed working
-- Wix Bookings service remains active on the `book` subdomain
+### 1. Replace Wix Bookings with WhatsApp ✅
+- All services now use WhatsApp Business for bookings (wa.me/447496959998)
+- Each service has a pre-filled WhatsApp message for easy booking
+- Sidebar shows "Message on WhatsApp" button with call/text fallback
+- eGift Card link in footer now points to WhatsApp
+- Wix Bookings no longer used for scheduling
 
 ### 2. Wire Contact Form to Email Service ✅
 - Contact form now sends emails via Resend API at `src/app/api/contact/route.ts`
@@ -32,10 +34,10 @@ Tasks that still need to be completed before and after launch.
 - See [DEPLOYMENT.md](./DEPLOYMENT.md) for DNS configuration
 
 ### 6. Update Business Address ✅
-- Updated Glastonbury address to: Sweet Track Fitness, above Studio 3, Unit 1 Beckery Road, Glastonbury, BA6 9QT
+- Updated Glastonbury address to: No 10 High Street, Glastonbury BA6 9DU
 - Updated in `src/app/services/craniosacral-glastonbury/page.tsx`
-- Updated in `src/app/services/mother-baby/page.tsx`
-- Updated in `src/app/contact/page.tsx` with full address
+- Updated in `src/app/services/mother-baby/page.tsx` (with "and home visits")
+- Updated in `src/app/contact/page.tsx` (with "and home visits")
 - Changes committed and pushed to GitHub
 - Vercel auto-deployed the updates
 
@@ -51,15 +53,20 @@ Tasks that still need to be completed before and after launch.
 - **Done:** Retreat images (Mary Magdalene flyer + Masami walking photo) already added to `public/images/retreats/`
 
 ### 7. Wire Gift Card Purchase ✅
-- Footer eGift Card link now points to `book.luminousrebirth.com/gift-card`
-- Gift card purchase handled through Wix booking site
+- Footer eGift Card link now points to WhatsApp with pre-filled message
+- Clients can inquire about gift cards directly via WhatsApp
 
 ### 8. Update Mother & Baby Clinic Section
 - Home page collaboration section updated with "coming soon" message for new low-cost clinic ✅
 - Mother & Baby service text — **needs review** (see `CHANGE-I-REVIEW.md`)
 - Clinic details to be added when new set-up is ready
 
-### 9. Add Real Blog Content
+### 9. Update MM Pilgrimage Itinerary ✅
+- Replaced old itinerary with updated version from PDF (Oct 10-17)
+- Added detailed daily descriptions with sacred sites, rituals, and historical context
+- Updated introduction text to match new itinerary
+
+### 10. Add Real Blog Content
 - The journal has 3 placeholder articles
 - Write or commission real content based on Masami's expertise
 - Consider migrating to MDX for richer content (embedded components, images)

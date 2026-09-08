@@ -124,7 +124,7 @@ Blog posts are defined in `src/app/journal/[slug]/page.tsx` in the `posts` objec
 
 ## Booking
 
-Booking is powered by Wix Bookings on the original site. Each service has a `bookingUrl` field in `site-data.ts` pointing to the Wix Bookings calendar page. Booking buttons open the Wix calendar in a new tab where clients select a time slot and pay.
+Booking is handled via WhatsApp Business. Each service has a `bookingUrl` field in `site-data.ts` pointing to a WhatsApp message link (`wa.me/447496959998`). Clients can also call or text 07496 959998 directly.
 
 ## Images
 

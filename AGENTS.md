@@ -83,7 +83,8 @@ This project was originally developed on a **Linux Ubuntu desktop** by Marco (th
 
 - Do NOT add dependencies without checking `package.json` first
 - Images from `static.wixstatic.com` are already allowed in `next.config.ts`
-- The booking system is Wix Bookings (links in `WixBookingsEmbed.tsx`)
+- The booking system uses WhatsApp Business (links in `WixBookingsEmbed.tsx`)
+- WhatsApp number: +447496959998
 - Contact/newsletter forms use Resend API (requires `RESEND_API_KEY` env var)
 - Retreat inquiry form also uses Resend API
 - Do not hardcode dates or prices inline -- use `site-data.ts`
