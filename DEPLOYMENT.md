@@ -58,11 +58,22 @@ Since the domain is registered with NameCheap and the `book` subdomain must rema
 |---|---|---|
 | CNAME | `www` | `cname.vercel-dns.com` |
 | A | `@` | `216.198.79.1` |
-| CNAME | `book` | `cdn1.wixdns.net` |
+| CNAME | `book` | `pointing.wixdns.net` |
 
 **Note:** Always verify the exact A record IP in your Vercel Dashboard under **Settings > Domains**. Use the IP Vercel recommends for your project.
 
 DNS propagation can take up to 48 hours but usually completes within a few hours.
+
+### Troubleshooting: Wix Booking Subdomain
+
+If `book.luminousrebirth.com` stops working (connection errors, SSL failures), the most likely cause is that **Wix has changed their CNAME target**. To fix:
+
+1. Log into Wix → Settings → Domains → check the `book` subdomain connection instructions for the current CNAME value
+2. Update the `book` CNAME in Namecheap → Advanced DNS with the new target
+3. Wait 5 minutes for DNS propagation
+4. In Wix, click "Try Again" on the domain connection status page
+
+Historical CNAME targets: `cdn1.wixdns.net` (pre-Sept 2026) → `pointing.wixdns.net` (current).
 
 ## Step 5: SSL Certificate
 
@@ -133,7 +144,7 @@ If something breaks after a deploy:
 ## Resend Email Setup Checklist
 
 - [x] Add `RESEND_API_KEY` to Vercel environment variables
-- [ ] Add `luminousrebirth.com` domain in Resend dashboard
-- [ ] Add DNS records (DKIM, SPF) at Namecheap
-- [ ] Verify domain shows as "Verified" in Resend
+- [x] Add `luminousrebirth.com` domain in Resend dashboard
+- [x] Add DNS records (DKIM, SPF) at Namecheap
+- [x] Verify domain shows as "Verified" in Resend
 - [ ] Test all three forms (contact, newsletter, retreat inquiry)
