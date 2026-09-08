@@ -96,7 +96,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://book.luminousrebirth.com/gift-card"
+                  href="https://wa.me/447496959998?text=Hi%20Masami%2C%20I%27m%20interested%20in%20purchasing%20a%20gift%20card."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gold transition-colors"
